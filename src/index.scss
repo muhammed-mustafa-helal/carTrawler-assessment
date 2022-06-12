@@ -1,0 +1,31 @@
+//variables
+$bg-white: #f8f8f8;
+$bg-gray: #e8e8e8;
+$theme-primary: #0f0028;
+$theme-secondary: #00d2a8;
+$font-primary: #0f0028;
+$border-primary: #e7e7e7;
+
+//global styles
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  color: $font-primary;
+}
+
+body {
+  font-size: inherit;
+  font-family: "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
+    "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
+  line-height: 1.7;
+}
