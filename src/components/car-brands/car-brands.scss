@@ -1,5 +1,6 @@
 .car-brands {
   height: 40rem;
+
   &__container {
     display: flex;
     flex-wrap: wrap;
@@ -8,50 +9,62 @@
     margin: 0 auto;
     max-width: 140rem;
   }
+
   &__rentals {
-    padding-top: 2rem;
+    padding-top: 5rem;
+
     & h2 {
       font-size: 2.4rem;
+
       @media screen and (max-width: 768px) {
-        font-size: 2rem;
+        font-size: 1.8rem;
+        margin-left: 1rem;
       }
     }
+
     &--images {
       padding-top: 2rem;
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
       column-gap: 3rem;
+
       img {
         width: 8rem;
         margin: 1rem auto;
       }
     }
   }
+
   &__perks {
     padding-top: 10rem;
     display: flex;
     flex-wrap: wrap;
 
     @media screen and (max-width: 768px) {
-      padding-top: 2rem;
+      padding-top: 3rem;
+      margin-left: 2rem;
     }
+
     &--feature {
       display: flex;
       margin-right: 2rem;
       width: 35rem;
       margin-bottom: 1rem;
+
       &--image {
         img {
           width: 6rem;
           height: 6rem;
           margin-right: 1rem;
+
           @media screen and (max-width: 768px) {
             width: 4rem;
             height: 4rem;
           }
         }
       }
+
       &--content {
         h5 {
           font-size: 2rem;
@@ -59,8 +72,10 @@
             font-size: 1.6rem;
           }
         }
+
         p {
           font-size: 1.6rem;
+
           @media screen and (max-width: 768px) {
             font-size: 1.2rem;
           }

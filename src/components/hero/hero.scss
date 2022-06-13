@@ -1,34 +1,99 @@
 .hero {
-  background-color: #e8e8e8;
-  height: 30rem;
+  background-color: #0f0028;
+  color: #fff;
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 140rem;
+  }
 
   &__intro {
-    padding-top: 3rem;
+    padding-top: 5rem;
+    display: flex;
+    flex-direction: column;
+
+    @media screen and (max-width: 768px) {
+      margin-left: 1rem;
+    }
+
+    h1 {
+      font-size: 2.4rem;
+      @media screen and (max-width: 768px) {
+        font-size: 2rem;
+      }
+    }
+
     ul {
       display: flex;
+      flex-wrap: wrap;
+
       list-style: none;
+      margin-top: 1.5rem;
       li {
         margin-right: 1rem;
+        font-size: 2rem;
         &:last-child {
           margin-right: 0;
+        }
+
+        @media screen and (max-width: 768px) {
+          font-size: 1.4rem;
         }
       }
     }
   }
 
   &__search-form {
-    padding-top: 5rem;
+    margin: 3rem 7rem 6rem 7rem;
+    display: flex;
+
+    form {
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      column-gap: 0.5rem;
+      margin: 4rem;
+
+      @media screen and (max-width: 768px) {
+        column-gap: 2rem;
+        flex-wrap: wrap;
+      }
+
+      input {
+        height: 3rem;
+        border: 3px solid #00d2a8;
+        border-radius: 0.5rem;
+        background-color: #e8e8e8;
+        font-family: "Roboto", sans-serif;
+        padding: 0.8rem 1rem;
+        @media screen and (max-width: 768px) {
+          margin-bottom: 2rem;
+        }
+      }
+    }
+    &--input {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+    }
     button {
       background-color: #00d2a8; /* theme secondary */
       color: #0f0028; /* theme primary */
       border: none;
       border-radius: 2px;
-      padding: 0.7rem 2rem;
+      padding: 0.95rem 3rem;
       font-size: 1rem;
       font-weight: bold;
       cursor: pointer;
       transition: 0.5s;
       margin-left: 1rem;
+      &:hover {
+        background-color: #0f0028; /* theme primary */
+        color: #00d2a8; /* theme secondary */
+        border: 1px solid #00d2a8; /* theme secondary */
+      }
     }
   }
 }
