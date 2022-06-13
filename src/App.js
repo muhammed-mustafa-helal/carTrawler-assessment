@@ -1,13 +1,13 @@
-import { Navbar, Hero, Brands } from "./components";
+import { Navbar } from "./components";
 import { FooterContainer } from "./containers";
+import { Homepage } from "./pages";
 
 
 export default function App() {
   return (
     <>
       <Navbar />
-      <Hero />
-      <Brands />
+      <Homepage />
       <FooterContainer />
     </>
   );

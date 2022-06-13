@@ -12,7 +12,7 @@ $border-primary: #e7e7e7;
 *::after {
   margin: 0;
   padding: 0;
-  box-sizing: inherit;
+  box-sizing: border-box;
 }
 
 html {
