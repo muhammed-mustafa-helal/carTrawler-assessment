@@ -10,8 +10,8 @@ export const Container = styled.div`
     padding: 5rem 0;
     margin: auto;
     max-width: 110rem;
-    @media (max-width: 1000px) {
-      padding: 7rem 3rem;
+    @media (max-width: 1150px) {
+      padding: 7rem 6rem 7rem 3rem ;
     }
 `;
 export const Identity = styled.div`
@@ -20,8 +20,8 @@ export const Identity = styled.div`
 
 export const Logo = styled.img`
   @media (max-width: 768px) {
-    width: 214px;
-    height:30px
+    height:30px;
+    width: auto;
   }
 `;
 

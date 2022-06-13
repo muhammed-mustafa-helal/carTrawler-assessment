@@ -16,6 +16,7 @@
 
     @media screen and (max-width: 768px) {
       margin-left: 1rem;
+      align-items: center;
     }
 
     h1 {
@@ -28,9 +29,13 @@
     ul {
       display: flex;
       flex-wrap: wrap;
-
       list-style: none;
       margin-top: 1.5rem;
+
+      @media screen and (max-width: 768px) {
+        justify-content: center;
+      }
+
       li {
         margin-right: 1rem;
         font-size: 2rem;
@@ -89,10 +94,15 @@
       cursor: pointer;
       transition: 0.5s;
       margin-left: 1rem;
+
       &:hover {
         background-color: #0f0028; /* theme primary */
         color: #00d2a8; /* theme secondary */
         border: 1px solid #00d2a8; /* theme secondary */
+      }
+
+      @media screen and (max-width: 768px) {
+        margin-bottom: 2rem;
       }
     }
   }

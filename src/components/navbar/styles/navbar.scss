@@ -1,0 +1,55 @@
+.navbar {
+  height: 8rem;
+
+  &__container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+  }
+  &__logo {
+    padding: 0 2rem;
+
+    img {
+      width: 15rem;
+      height: auto;
+    }
+  }
+
+  &__menu {
+    display: flex;
+    list-style: none;
+    column-gap: 3rem;
+    align-items: center;
+    justify-content: center;
+
+    &--currency {
+      font-weight: bold;
+      font-size: 1.4rem;
+      margin-bottom: 5px;
+      cursor: pointer;
+    }
+
+    &--language {
+      width: 20px;
+      height: auto;
+      cursor: pointer;
+
+      & img {
+        border-radius: 30%;
+      }
+    }
+    a {
+      text-decoration: none;
+      color: #0f0028;
+      font-size: 2rem;
+      font-weight: bold;
+      transition: 0.5s;
+      &:hover {
+        color: #00d2a8;
+      }
+    }
+  }
+}
