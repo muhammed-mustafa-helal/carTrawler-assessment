@@ -1,4 +1,4 @@
-import './car-brands.scss'
+import './styles/car-brands.scss'
 
 import { rentalBrands, rentalPerks } from '../../fixtures/rentalBrands'
 

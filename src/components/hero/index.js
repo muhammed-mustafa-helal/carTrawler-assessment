@@ -1,8 +1,16 @@
+// import { useNavigate } from 'react-router-dom';
+
 import { AiOutlineCheck } from 'react-icons/ai';
 
-import './hero.scss';
+import './styles/hero.scss';
 
 export default function Hero() {
+    // const navigate = useNavigate();
+
+    // function searchClickHandler() {
+    //     navigate('/search-animation');
+    // }
+
     return (
         <section className='hero'>
             <div className='hero__container'>
@@ -17,27 +25,26 @@ export default function Hero() {
                 <div className='hero__search-form'>
                     <form>
                         <div className='hero__search-form--input'>
-                            <label for="location">Pick-up Location</label>
+                            <label htmlFor="location">Pick-up Location</label>
                             <input type="text" id="location" name="location" disabled value="Las Vegas - Airport" />
                         </div>
                         <div className='hero__search-form--input'>
-                            <label for="location">Pick-up date</label>
+                            <label htmlFor="location">Pick-up date</label>
                             <input type="date" id="location" name="location" disabled value="2020-03-22" />
                         </div>
                         <div className='hero__search-form--input'>
-                            <label for="location">Time</label>
+                            <label htmlFor="location">Time</label>
                             <input type="time" id="location" name="location" disabled value="10:00" />
                         </div>
                         <div className='hero__search-form--input'>
-                            <label for="location">Return date</label>
+                            <label htmlFor="location">Return date</label>
                             <input type="date" id="location" name="location" disabled value="2020-04-06" />
                         </div>
 
                         <div className='hero__search-form--input'>
-                            <label for="location">Time</label>
+                            <label htmlFor="location">Time</label>
                             <input type="time" id="location" name="location" disabled value="10:00" />
                         </div>
-
                         <button type='submit'>Search</button>
                     </form>
                 </div>
