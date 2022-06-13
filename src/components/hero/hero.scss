@@ -1,0 +1,34 @@
+.hero {
+  background-color: #e8e8e8;
+  height: 30rem;
+
+  &__intro {
+    padding-top: 3rem;
+    ul {
+      display: flex;
+      list-style: none;
+      li {
+        margin-right: 1rem;
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+
+  &__search-form {
+    padding-top: 5rem;
+    button {
+      background-color: #00d2a8; /* theme secondary */
+      color: #0f0028; /* theme primary */
+      border: none;
+      border-radius: 2px;
+      padding: 0.7rem 2rem;
+      font-size: 1rem;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.5s;
+      margin-left: 1rem;
+    }
+  }
+}

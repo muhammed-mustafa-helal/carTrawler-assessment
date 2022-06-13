@@ -1,8 +1,6 @@
-
+import { Hero, Brands } from "./components";
 export default function App() {
   return (
-    <div >
-      Hello World
-    </div>
+    <Brands />
   );
 }
