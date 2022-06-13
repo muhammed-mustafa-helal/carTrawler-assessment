@@ -10,13 +10,13 @@ export default function CarBrands() {
                     <h2>Connecting you to the biggest brands in car rental</h2>
                     <div className='car-brands__rentals--images'>
                         {rentalBrands.map((brand) =>
-                            <img key={brand.name} src={brand.imageUrl} alt={brand.name} />
+                            <img key={brand.id} src={brand.imageUrl} alt={brand.name} />
                         )}
                     </div>
                 </div>
                 <div className='car-brands__perks'>
                     {rentalPerks.map((perk) => (
-                        <div className='car-brands__perks--feature' key={perk.name}>
+                        <div className='car-brands__perks--feature' key={perk.id}>
                             <div className='car-brands__perks--feature--image'>
                                 <img src={perk.imageUrl} alt={perk.name} />
                             </div>
