@@ -1,13 +1,13 @@
 import { Navbar } from "./components";
 import { FooterContainer } from "./containers";
-import { Homepage } from "./pages";
+import { CarsSearchPage } from "./pages";
 
 
 export default function App() {
   return (
     <>
       <Navbar />
-      <Homepage />
+      <CarsSearchPage />
       <FooterContainer />
     </>
   );

@@ -1,0 +1,11 @@
+.car-list-page {
+  display: flex;
+  &__container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    max-width: 140rem;
+  }
+}
