@@ -1,15 +1,15 @@
-// import { useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 import { AiOutlineCheck } from 'react-icons/ai';
 
 import './styles/hero.scss';
 
 export default function Hero() {
-    // const navigate = useNavigate();
+    const navigate = useNavigate();
 
-    // function searchClickHandler() {
-    //     navigate('/search-animation');
-    // }
+    function searchClickHandler() {
+        navigate('/car-deals');
+    }
 
     return (
         <section className='hero'>
@@ -45,7 +45,7 @@ export default function Hero() {
                             <label htmlFor="location">Time</label>
                             <input type="time" id="location" name="location" disabled value="10:00" />
                         </div>
-                        <button type='submit'>Search</button>
+                        <button type='button' onClick={searchClickHandler}>Search</button>
                     </form>
                 </div>
             </div>

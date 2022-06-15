@@ -1,11 +1,19 @@
 .car-list-page {
   display: flex;
+
   &__container {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: flex-start;
     flex-wrap: wrap;
     margin: 0 auto;
-    max-width: 140rem;
+    width: 100rem;
+    column-gap: 4rem;
+  }
+
+  .filter-panel {
+
+  }
+  .car-list {
   }
 }

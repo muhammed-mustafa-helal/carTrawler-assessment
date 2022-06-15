@@ -1,32 +1,53 @@
 .car-card {
   display: flex;
   border: 1px solid #e7e7e7;
-  border-radius: 5px;
-}
-.car-card__image {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.car-card__image img {
-  width: 20rem;
+  border-radius: 10px;
+  &__image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    & img {
+      width: 20rem;
+      margin: 4rem;
+      @media screen and (max-width: 600px) {
+        width: 15rem;
+        margin: 3rem;
+      }
+    }
+  }
 }
 
 //options
 .car-card__options {
   display: flex;
   flex-direction: column;
-}
-.car-card__options--name {
-  font-weight: bold;
-}
-.car-card__options--menu {
-  display: flex;
-  margin-top: 2rem;
-}
 
-.car_card__options--menu--catalog {
-  list-style: none;
+  &--name {
+    font-weight: bold;
+    margin-top: 2rem;
+    font-size: 2rem;
+    @media screen and (max-width: 600px) {
+      margin-top: 1.5rem;
+      font-size: 1.4rem;
+    }
+
+    span {
+      font-weight: 400;
+    }
+  }
+
+  &--menu {
+    display: flex;
+
+    &--catalog {
+      list-style: none;
+      font-size: 1.4rem;
+      margin: 3rem 5rem 3rem 0;
+      @media screen and (max-width: 600px) {
+        margin: 2rem 3rem 2rem 0;
+      }
+    }
+  }
 }
 
 .car-card__price {
@@ -34,32 +55,42 @@
   flex: 3 1 auto;
   flex-direction: column;
   justify-content: flex-end;
-  margin-right: 1rem;
+  margin-right: 2rem;
   align-items: flex-end;
-}
 
-.car-card__price button {
-  background-color: #00d2a8; /* theme secondary */
-  color: #0f0028; /* theme primary */
-  border: none;
-  border-radius: 2px;
-  padding: 1rem 4rem;
-  font-size: 1rem;
-  font-weight: bold;
-  cursor: pointer;
-  transition: 0.5s;
-}
-.car-card__price button:hover {
-  background-color: #0f0028; /* theme primary */
-  color: #00d2a8; /* theme secondary */
-}
+  img {
+    width: 10rem;
+    margin-bottom: 0.8rem;
+  }
+  &--price {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-bottom: 1.2rem;
+    font-size: 1.4rem;
+  }
 
-.free-cancellation {
-  color: #00d2a8;
-}
-.free-cancellation span {
-  color: #0f0028;
-}
-BsCheck {
-  color: #00d2a8;
+  &--free-cancellation {
+    color: #0f0028; /* font primary */
+    font-size: 1.5rem;
+    margin-bottom: 0.8rem;
+  }
+
+  button {
+    background-color: #00d2a8; /* theme secondary */
+    color: #0f0028; /* theme primary */
+    border: none;
+    border-radius: 2px;
+    padding: 1rem 4rem;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.5s;
+    margin-bottom: 1rem;
+
+    &:hover {
+      background-color: #0f0028; /* theme primary */
+      color: #00d2a8; /* theme secondary */
+    }
+  }
 }

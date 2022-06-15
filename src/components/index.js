@@ -4,4 +4,5 @@ export { default as Brands } from './car-brands'
 export { default as Footer } from './footer';
 export { default as CarCard } from './car-card'
 export { default as CarsList } from './cars-list'
-export {default as FilterPanel} from './filter-panel'
+export { default as FilterPanel } from './filter-panel'
+export { default as Checkbox } from './shared/checkbox'
