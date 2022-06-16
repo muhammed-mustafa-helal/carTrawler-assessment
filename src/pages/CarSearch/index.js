@@ -4,13 +4,15 @@ import './styles/car-search.scss'
 
 export default function CarSearchPage() {
     return (
-        <div className="car-search-page">
-            <PickupReturnLegend>
+        <PickupReturnLegend>
+
+            <div className="car-search-page">
                 <div className="car-search-page__container">
                     <FilterPanel />
                     <CarsList />
                 </div>
-            </PickupReturnLegend >
-        </div >
+            </div >
+        </PickupReturnLegend >
+
     )
 }

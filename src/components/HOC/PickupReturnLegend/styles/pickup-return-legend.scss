@@ -1,8 +1,25 @@
-fieldset {
-  border: none;
-  margin: 0 auto;
-}
+.pickup-return {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
 
-legend {
-  margin: 3rem auto;
+  fieldset {
+    border: none;
+    margin: 1rem 3rem 3rem;
+    font-size: 1.4rem;
+
+    legend {
+      padding: 1rem;
+      display: flex;
+      align-items: center;
+      column-gap: 10rem;
+      border: 2px solid #00d2a8;
+      border-radius: 10px;
+
+      p {
+        white-space: nowrap;
+      }
+    }
+  }
 }

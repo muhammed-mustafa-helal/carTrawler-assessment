@@ -9,6 +9,11 @@
     margin: 0 auto;
     width: 100rem;
     column-gap: 4rem;
+    @media screen and (max-width: 768px) {
+      flex-direction: column;
+      align-items: center;
+      width: auto;
+    }
   }
 
   .filter-panel {
