@@ -28,7 +28,7 @@ export default function CarCard() {
                         </ul>
                         <ul className="car-card__options--menu--catalog">
                             <li title='Fuel type'><span><MdLocalGasStation /></span>Petrol</li>
-                            <li title='Number of doors'><span><GiCarDoor /></span>4 Foors</li>
+                            <li title='Number of doors'><span><GiCarDoor /></span>4 Doors</li>
                             <li title='Air conditioning'><span><MdOutlineAir /></span>Yes</li>
                         </ul>
                     </div>
