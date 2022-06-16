@@ -22,13 +22,13 @@ export default function CarCard() {
                     <h3 className="car-card__options--name">Toyota Rav4 <span>or similar</span></h3>
                     <div className="car-card__options--menu">
                         <ul className="car-card__options--menu--catalog">
-                            <li title='Number of seats'><span><BsPerson /></span>4 seats</li>
-                            <li title='Luggage capacity'><span><TbLuggage /></span>2 bags</li>
+                            <li title='Number of seats'><span><BsPerson /></span>4 Seats</li>
+                            <li title='Luggage capacity'><span><TbLuggage /></span>2 Bags</li>
                             <li title='Transmission type'><span><TbExchange /></span>Manual</li>
                         </ul>
                         <ul className="car-card__options--menu--catalog">
                             <li title='Fuel type'><span><MdLocalGasStation /></span>Petrol</li>
-                            <li title='Number of doors'><span><GiCarDoor /></span>4 doors</li>
+                            <li title='Number of doors'><span><GiCarDoor /></span>4 Doors</li>
                             <li title='Air conditioning'><span><MdOutlineAir /></span>Yes</li>
                         </ul>
                     </div>

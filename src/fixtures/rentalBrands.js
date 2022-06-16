@@ -6,7 +6,7 @@ export const rentalBrands = [
     { id: '1005', name: "Hertz", imageUrl: 'https://cdn2.rcstatic.com/images/supplier_logos/hertz_logo_lrg.gif' },
     { id: '1006', name: "Avis", imageUrl: 'https://cdn2.rcstatic.com/images/supplier_logos/avis_logo_lrg.gif' },
     { id: '1007', name: "Eurocar", imageUrl: 'https://cdn2.rcstatic.com/images/supplier_logos/europcar_logo_lrg.gif' },
-    { id: '1008', name: "Firefly", imageUrl: 'https://cdn2.rcstatic.com/images/supplier_logos/firefly_logo_lrg.gif' },
+    { id: '1008', name: "Alamo", imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/8/89/Alamo_Rent_a_Car_%28logo%29.svg' },
 ]
 
 export const rentalPerks = [
