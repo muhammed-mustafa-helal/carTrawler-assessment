@@ -1,4 +1,4 @@
-import { useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 import { BsPerson } from 'react-icons/bs'
 import { GiCarDoor } from 'react-icons/gi'
@@ -12,14 +12,10 @@ import classes from './styles/car-card.module.scss';
 import { trimAndToLowerCase } from '../../helpers/helpers'
 
 import { vendorPhotos } from '../../fixtures/vendorsPhotos'
+import { CAR_DETAILS_DYNAMIC } from '../../constants/routes';
 
 
 export default function CarCard({ car }) {
-    const navigate = useNavigate();
-
-    function viewDealClickHandler() {
-        navigate(`/car-details/${car.carId}`);
-    }
 
     const vendorName = trimAndToLowerCase(car.vendorName);
     const vendorLogo = vendorPhotos[vendorName];
@@ -90,9 +86,9 @@ export default function CarCard({ car }) {
                         </span>
                         Free cancellation
                     </p>
-                    <button type='button' onClick={viewDealClickHandler}>View Deal</button>
+                    <Link to={CAR_DETAILS_DYNAMIC(car.carId)}>View Deal</Link>
                 </div>
             </IconContext.Provider >
-        </div>
+        </div >
     )
 }

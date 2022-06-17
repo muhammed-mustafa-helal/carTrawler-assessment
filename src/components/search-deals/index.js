@@ -1,4 +1,4 @@
-import { LoadingSpinner } from '../'
+import { LoadingSpinner } from '..'
 import { rentalBrands } from '../../fixtures/rentalBrands';
 
 import classes from './styles/search-deals.module.scss';

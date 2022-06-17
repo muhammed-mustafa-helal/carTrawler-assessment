@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 
-import { CarCard } from '../';
+import { CarCard } from '..';
 
 import nextId from "react-id-generator";
 

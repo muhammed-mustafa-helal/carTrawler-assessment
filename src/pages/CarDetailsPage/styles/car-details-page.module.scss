@@ -1,0 +1,16 @@
+.car-details-page {
+  &__container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    width: 100rem;
+    column-gap: 4rem;
+    @media screen and (max-width: 768px) {
+      flex-direction: column;
+      align-items: center;
+      width: auto;
+    }
+  }
+}

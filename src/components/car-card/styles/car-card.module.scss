@@ -77,12 +77,13 @@
     margin-bottom: 0.8rem;
   }
 
-  button {
+  a {
+    text-decoration: none;
     background-color: #00d2a8; /* theme secondary */
     color: #0f0028; /* theme primary */
     border: none;
     border-radius: 2px;
-    padding: 1rem 3rem;
+    padding: .6rem 3rem;
     font-size: 1.2rem;
     font-weight: bold;
     cursor: pointer;

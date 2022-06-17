@@ -1,10 +1,11 @@
-import { Navbar } from "./components";
-import { FooterContainer } from "./containers";
-
-import { Homepage, SearchingForDealsPage, CarDealsList, CarDetailsPage } from "./pages";
-
 import { Routes, Route } from 'react-router-dom'
 
+import { Navbar } from "./components";
+import { FooterContainer } from "./containers";
+import { Homepage, SearchingForDealsPage, CarDealsList, CarDetailsPage } from "./pages";
+
+
+import { HOME, SEARCH_DEALS, CAR_DEALS, CAR_DETAILS } from './constants/routes'
 
 
 export default function App() {
@@ -12,16 +13,18 @@ export default function App() {
     <>
       <Navbar />
       <Routes>
-        <Route path='/' element={<Homepage />}>
+        <Route path={HOME} element={<Homepage />}>
         </Route>
-        <Route path='/search-for-deals' element={<SearchingForDealsPage />}>
+        <Route path={SEARCH_DEALS} element={<SearchingForDealsPage />}>
         </Route>
-        <Route path='/cars-deals' element={<CarDealsList />}>
+        <Route path={CAR_DEALS} element={<CarDealsList />}>
         </Route>
-        <Route path='car-details/:carId' element={<CarDetailsPage />}>
+        <Route path={CAR_DETAILS} element={<CarDetailsPage />}>
         </Route>
       </Routes>
       <FooterContainer />
     </>
   );
 }
+
+
