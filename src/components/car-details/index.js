@@ -1,4 +1,4 @@
-import './styles/car-details.scss';
+import './styles/car-details.module.scss';
 
 export default function CarDetails() {
     return (

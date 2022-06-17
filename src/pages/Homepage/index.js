@@ -1,9 +1,9 @@
-import { Hero, Brands } from '../../components'
+import { SearchForm, Brands } from '../../components'
 
 export default function Homepage() {
     return (
         <>
-            <Hero />
+            <SearchForm />
             <Brands />
         </>
     )

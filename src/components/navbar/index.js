@@ -1,6 +1,6 @@
 import { AiOutlineShoppingCart } from 'react-icons/ai'
 import { useNavigate } from 'react-router-dom';
-import './styles/navbar.scss';
+import classes from './styles/navbar.module.scss';
 
 export default function Navbar() {
     const navigate = useNavigate();
@@ -8,17 +8,17 @@ export default function Navbar() {
     const navigateToHomeHandler = () => navigate('/');
 
     return (
-        <nav className="navbar">
-            <div className='navbar__container'>
-                <div className="navbar__logo" onClick={navigateToHomeHandler}>
+        <nav className={classes['navbar']}>
+            <div className={classes['navbar__container']}>
+                <div className={classes['navbar__logo']} onClick={navigateToHomeHandler}>
                     <img src="images/ct-logo-dark.svg" alt="CarTrawler Logo" />
                 </div>
-                <ul className="navbar__menu">
-                    <li className='navbar__menu--currency' title='Website currency'>
+                <ul className={classes['navbar__menu']}>
+                    <li className={classes['navbar__menu--currency']} title='canadian dollar'>
                         CAD
                     </li>
-                    <li className='navbar__menu--language' title='Website Language'>
-                        <img src="/images/united-states.svg" alt="Website Language" />
+                    <li className={classes['navbar__menu--language']} title='website'>
+                        <img src="/images/united-states.svg" alt="English US" />
                     </li>
                     <li>
                         <a href='/#'><AiOutlineShoppingCart /><span>1</span></a>

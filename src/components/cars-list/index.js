@@ -1,10 +1,12 @@
 import { useEffect, useState } from 'react';
 
+import { CarCard } from '../';
+
 import nextId from "react-id-generator";
 
+
 import jsonData from '../../cars.json'
-import './styles/car-list.scss'
-import { CarCard } from '../'
+import classes from './styles/car-list.module.scss'
 
 
 export default function CarsList() {
@@ -35,7 +37,7 @@ export default function CarsList() {
 
 
     return (
-        <div className='car-list'>
+        <div className={classes['car-list']}>
             {cars.length && cars.map((car) => (<CarCard key={car.carId} car={car} />))}
         </div>
     )

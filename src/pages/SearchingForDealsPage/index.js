@@ -2,7 +2,7 @@ import { useEffect } from 'react'
 import { useNavigate } from 'react-router-dom';
 
 import { SearchDeals } from '../../components';
-import './styles/searching-for-deals-page.scss';
+import classes from './styles/searching-for-deals-page.module.scss';
 
 export default function SearchingForDealsPage() {
     const navigate = useNavigate()
@@ -14,7 +14,7 @@ export default function SearchingForDealsPage() {
     }, [navigate]);
 
     return (
-        <div className="searching-for-deals">
+        <div className={classes['searching-for-deals']}>
             <SearchDeals />
         </div>
     )

@@ -1,5 +1,5 @@
 export { default as Navbar } from './navbar'
-export { default as Hero } from './hero'
+export { default as SearchForm } from './search-form'
 export { default as Brands } from './car-brands'
 export { default as Footer } from './footer';
 export { default as CarCard } from './car-card'

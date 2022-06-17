@@ -11,7 +11,7 @@
       margin: 4rem;
       @media screen and (max-width: 600px) {
         width: 15rem;
-        margin: 3rem;
+        margin: 2rem;
       }
     }
   }
@@ -43,6 +43,7 @@
       list-style: none;
       font-size: 1.4rem;
       margin: 3rem 5rem 3rem 0;
+      white-space: no;
       @media screen and (max-width: 600px) {
         margin: 2rem 3rem 2rem 0;
       }
@@ -57,10 +58,10 @@
   justify-content: flex-end;
   margin-right: 2rem;
   align-items: flex-end;
-
+  white-space: nowrap;
   img {
     width: 8rem;
-    margin-bottom: 1rem;
+    margin: 2rem 0 2rem;
   }
   &--price {
     display: flex;
@@ -94,4 +95,3 @@
     }
   }
 }
-
