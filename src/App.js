@@ -16,7 +16,7 @@ export default function App() {
         </Route>
         <Route path='/search-for-deals' element={<SearchingForDealsPage />}>
         </Route>
-        <Route path='/car-deals' element={<CarDealsList />}>
+        <Route path='/cars-deals' element={<CarDealsList />}>
         </Route>
         <Route path='car-details/:carId' element={<CarDetailsPage />}>
         </Route>

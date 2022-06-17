@@ -8,7 +8,7 @@ export default function SearchingForDealsPage() {
     const navigate = useNavigate()
     useEffect(() => {
         const timer = setTimeout(() => {
-            navigate('/car-deals')
+            navigate('/cars-deals')
         }, 2000);
         return () => clearTimeout(timer);
     }, [navigate]);
