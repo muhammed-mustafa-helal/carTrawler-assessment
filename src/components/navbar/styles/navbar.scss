@@ -50,5 +50,14 @@
         color: #00d2a8;
       }
     }
+    badge {
+      font-size: 1.4rem;
+      position: relative;
+      bottom: 13px;
+      right: 3px;
+      color: #00d2a8;
+      padding: 0.3rem;
+      border-radius: 50%;
+    }
   }
 }

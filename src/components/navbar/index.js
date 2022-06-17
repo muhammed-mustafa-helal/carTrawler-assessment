@@ -21,7 +21,7 @@ export default function Navbar() {
                         <img src="/images/united-states.svg" alt="Website Language" />
                     </li>
                     <li>
-                        <a href='/#'><AiOutlineShoppingCart /></a>
+                        <a href='/#'><AiOutlineShoppingCart /><badge>1</badge></a>
                     </li>
                 </ul>
             </div>

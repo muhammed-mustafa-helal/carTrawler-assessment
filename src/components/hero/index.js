@@ -8,7 +8,7 @@ export default function Hero() {
     const navigate = useNavigate();
 
     function searchClickHandler() {
-        navigate('/car-deals');
+        navigate('/search-for-deals');
     }
 
     return (
