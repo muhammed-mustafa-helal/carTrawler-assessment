@@ -1,26 +1,26 @@
 [
   {
-    VehAvailRSCore: {
-      VehRentalCore: {
+    "VehAvailRSCore": {
+      "VehRentalCore": {
         "@PickUpDateTime": "2020-03-22T10:00:00Z",
         "@ReturnDateTime": "2020-04-06T10:00:00Z",
-        PickUpLocation: {
-          "@Name": "Las Vegas - Airport",
+        "PickUpLocation": {
+          "@Name": "Las Vegas - Airport"
         },
-        ReturnLocation: {
-          "@Name": "Las Vegas - Airport",
-        },
+        "ReturnLocation": {
+          "@Name": "Las Vegas - Airport"
+        }
       },
-      VehVendorAvails: [
+      "VehVendorAvails": [
         {
-          Vendor: {
+          "Vendor": {
             "@Code": "125",
-            "@Name": "ALAMO",
+            "@Name": "ALAMO"
           },
-          VehAvails: [
+          "VehAvails": [
             {
               "@Status": "Available",
-              Vehicle: {
+              "Vehicle": {
                 "@AirConditionInd": "true",
                 "@TransmissionType": "Automatic",
                 "@FuelType": "Petrol",
@@ -30,21 +30,20 @@
                 "@Code": "IFAR",
                 "@CodeContext": "CARTRAWLER",
                 "@DoorCount": "5",
-                VehMakeModel: {
-                  "@Name": "Toyota Rav4 or similar",
+                "VehMakeModel": {
+                  "@Name": "Toyota Rav4 or similar"
                 },
-                PictureURL:
-                  "https://ctimg-fleet.cartrawler.com/toyota/rav4/primary.png?auto=format&w=600",
+                "PictureURL": "https://ctimg-fleet.cartrawler.com/toyota/rav4/primary.png?auto=format&w=600"
               },
-              TotalCharge: {
+              "TotalCharge": {
                 "@RateTotalAmount": "878.98",
                 "@EstimatedTotalAmount": "878.98",
-                "@CurrencyCode": "CAD",
-              },
+                "@CurrencyCode": "CAD"
+              }
             },
             {
               "@Status": "Available",
-              Vehicle: {
+              "Vehicle": {
                 "@AirConditionInd": "true",
                 "@TransmissionType": "Automatic",
                 "@FuelType": "Petrol",
@@ -54,29 +53,28 @@
                 "@Code": "PCAR",
                 "@CodeContext": "CARTRAWLER",
                 "@DoorCount": "4",
-                VehMakeModel: {
-                  "@Name": "Chrysler 300 or similar",
+                "VehMakeModel": {
+                  "@Name": "Chrysler 300 or similar"
                 },
-                PictureURL:
-                  "https://ctimg-fleet.cartrawler.com/chrysler/300/primary.png?auto=format&w=600",
+                "PictureURL": "https://ctimg-fleet.cartrawler.com/chrysler/300/primary.png?auto=format&w=600"
               },
-              TotalCharge: {
+              "TotalCharge": {
                 "@RateTotalAmount": "851.03",
                 "@EstimatedTotalAmount": "851.03",
-                "@CurrencyCode": "CAD",
-              },
-            },
-          ],
+                "@CurrencyCode": "CAD"
+              }
+            }
+          ]
         },
         {
-          Vendor: {
+          "Vendor": {
             "@Code": "1364",
-            "@Name": "AVIS",
+            "@Name": "AVIS"
           },
-          VehAvails: [
+          "VehAvails": [
             {
               "@Status": "Available",
-              Vehicle: {
+              "Vehicle": {
                 "@AirConditionInd": "true",
                 "@TransmissionType": "Automatic",
                 "@FuelType": "Petrol",
@@ -86,21 +84,20 @@
                 "@Code": "FDAR",
                 "@CodeContext": "CARTRAWLER",
                 "@DoorCount": "4",
-                VehMakeModel: {
-                  "@Name": "Chevrolet Impala or similar",
+                "VehMakeModel": {
+                  "@Name": "Chevrolet Impala or similar"
                 },
-                PictureURL:
-                  "https://ctimg-fleet.cartrawler.com/chevrolet/impala/primary.png?auto=format&w=600",
+                "PictureURL": "https://ctimg-fleet.cartrawler.com/chevrolet/impala/primary.png?auto=format&w=600"
               },
-              TotalCharge: {
+              "TotalCharge": {
                 "@RateTotalAmount": "836.25",
                 "@EstimatedTotalAmount": "836.25",
-                "@CurrencyCode": "CAD",
-              },
+                "@CurrencyCode": "CAD"
+              }
             },
             {
               "@Status": "Available",
-              Vehicle: {
+              "Vehicle": {
                 "@AirConditionInd": "true",
                 "@TransmissionType": "Automatic",
                 "@FuelType": "Petrol",
@@ -110,21 +107,20 @@
                 "@Code": "FCAR",
                 "@CodeContext": "CARTRAWLER",
                 "@DoorCount": "3",
-                VehMakeModel: {
-                  "@Name": "Chevrolet Impala or similar",
+                "VehMakeModel": {
+                  "@Name": "Chevrolet Impala or similar"
                 },
-                PictureURL:
-                  "https://ctimg-fleet.cartrawler.com/chevrolet/impala/primary.png?auto=format&w=600",
+                "PictureURL": "https://ctimg-fleet.cartrawler.com/chevrolet/impala/primary.png?auto=format&w=600"
               },
-              TotalCharge: {
+              "TotalCharge": {
                 "@RateTotalAmount": "836.25",
                 "@EstimatedTotalAmount": "836.25",
-                "@CurrencyCode": "CAD",
-              },
+                "@CurrencyCode": "CAD"
+              }
             },
             {
               "@Status": "Available",
-              Vehicle: {
+              "Vehicle": {
                 "@AirConditionInd": "true",
                 "@TransmissionType": "Automatic",
                 "@FuelType": "Petrol",
@@ -134,21 +130,20 @@
                 "@Code": "IFAR",
                 "@CodeContext": "CARTRAWLER",
                 "@DoorCount": "5",
-                VehMakeModel: {
-                  "@Name": "Ford Escape or similar",
+                "VehMakeModel": {
+                  "@Name": "Ford Escape or similar"
                 },
-                PictureURL:
-                  "https://ctimg-fleet.cartrawler.com/ford/escape/primary.png?auto=format&w=600",
+                "PictureURL": "https://ctimg-fleet.cartrawler.com/ford/escape/primary.png?auto=format&w=600"
               },
-              TotalCharge: {
+              "TotalCharge": {
                 "@RateTotalAmount": "928.29",
                 "@EstimatedTotalAmount": "928.29",
-                "@CurrencyCode": "CAD",
-              },
+                "@CurrencyCode": "CAD"
+              }
             },
             {
               "@Status": "Available",
-              Vehicle: {
+              "Vehicle": {
                 "@AirConditionInd": "true",
                 "@TransmissionType": "Automatic",
                 "@FuelType": "Petrol",
@@ -158,21 +153,20 @@
                 "@Code": "LDAR",
                 "@CodeContext": "CARTRAWLER",
                 "@DoorCount": "4",
-                VehMakeModel: {
-                  "@Name": "Cadillac CTS or similar",
+                "VehMakeModel": {
+                  "@Name": "Cadillac CTS or similar"
                 },
-                PictureURL:
-                  "https://ctimg-fleet.cartrawler.com/cadillac/cts/primary.png?auto=format&w=600",
+                "PictureURL": "https://ctimg-fleet.cartrawler.com/cadillac/cts/primary.png?auto=format&w=600"
               },
-              TotalCharge: {
+              "TotalCharge": {
                 "@RateTotalAmount": "1118.83",
                 "@EstimatedTotalAmount": "1118.83",
-                "@CurrencyCode": "CAD",
-              },
+                "@CurrencyCode": "CAD"
+              }
             },
             {
               "@Status": "Available",
-              Vehicle: {
+              "Vehicle": {
                 "@AirConditionInd": "true",
                 "@TransmissionType": "Automatic",
                 "@FuelType": "Petrol",
@@ -182,30 +176,29 @@
                 "@Code": "PDAR",
                 "@CodeContext": "CARTRAWLER",
                 "@DoorCount": "4",
-                VehMakeModel: {
-                  "@Name": "Chrysler 300 or similar",
+                "VehMakeModel": {
+                  "@Name": "Chrysler 300 or similar"
                 },
-                PictureURL:
-                  "https://ctimg-fleet.cartrawler.com/chrysler/300/primary.png?auto=format&w=600",
+                "PictureURL": "https://ctimg-fleet.cartrawler.com/chrysler/300/primary.png?auto=format&w=600"
               },
-              TotalCharge: {
+              "TotalCharge": {
                 "@RateTotalAmount": "1071.92",
                 "@EstimatedTotalAmount": "1071.92",
-                "@CurrencyCode": "CAD",
-              },
-            },
-          ],
+                "@CurrencyCode": "CAD"
+              }
+            }
+          ]
         },
 
         {
-          Vendor: {
+          "Vendor": {
             "@Code": "2338",
-            "@Name": "HERTZ",
+            "@Name": "HERTZ"
           },
-          VehAvails: [
+          "VehAvails": [
             {
               "@Status": "Available",
-              Vehicle: {
+              "Vehicle": {
                 "@AirConditionInd": "true",
                 "@TransmissionType": "Automatic",
                 "@FuelType": "Petrol",
@@ -216,21 +209,20 @@
                 "@CodeContext": "CARTRAWLER",
                 "@DoorCount": "3",
                 "@Size": "6",
-                VehMakeModel: {
-                  "@Name": "Toyota Corolla or similar",
+                "VehMakeModel": {
+                  "@Name": "Toyota Corolla or similar"
                 },
-                PictureURL:
-                  "https://ctimg-fleet.cartrawler.com/toyota/corolla/primary.png?auto=format&w=600",
+                "PictureURL": "https://ctimg-fleet.cartrawler.com/toyota/corolla/primary.png?auto=format&w=600"
               },
-              TotalCharge: {
+              "TotalCharge": {
                 "@RateTotalAmount": "752.31",
                 "@EstimatedTotalAmount": "752.31",
-                "@CurrencyCode": "CAD",
-              },
+                "@CurrencyCode": "CAD"
+              }
             },
             {
               "@Status": "Available",
-              Vehicle: {
+              "Vehicle": {
                 "@AirConditionInd": "true",
                 "@TransmissionType": "Automatic",
                 "@FuelType": "Petrol",
@@ -240,21 +232,20 @@
                 "@Code": "ECAR",
                 "@CodeContext": "CARTRAWLER",
                 "@DoorCount": "2",
-                VehMakeModel: {
-                  "@Name": "Kia Rio or similar",
+                "VehMakeModel": {
+                  "@Name": "Kia Rio or similar"
                 },
-                PictureURL:
-                  "https://ctimg-fleet.cartrawler.com/kia/rio/primary.png?auto=format&w=600",
+                "PictureURL": "https://ctimg-fleet.cartrawler.com/kia/rio/primary.png?auto=format&w=600"
               },
-              TotalCharge: {
+              "TotalCharge": {
                 "@RateTotalAmount": "731.47",
                 "@EstimatedTotalAmount": "731.47",
-                "@CurrencyCode": "CAD",
-              },
+                "@CurrencyCode": "CAD"
+              }
             },
             {
               "@Status": "Available",
-              Vehicle: {
+              "Vehicle": {
                 "@AirConditionInd": "true",
                 "@TransmissionType": "Automatic",
                 "@FuelType": "Petrol",
@@ -264,21 +255,20 @@
                 "@Code": "CDAR",
                 "@CodeContext": "CARTRAWLER",
                 "@DoorCount": "5",
-                VehMakeModel: {
-                  "@Name": "Ford Focus or similar",
+                "VehMakeModel": {
+                  "@Name": "Ford Focus or similar"
                 },
-                PictureURL:
-                  "https://ctimg-fleet.cartrawler.com/ford/focus/primary.png?auto=format&w=600",
+                "PictureURL": "https://ctimg-fleet.cartrawler.com/ford/focus/primary.png?auto=format&w=600"
               },
-              TotalCharge: {
+              "TotalCharge": {
                 "@RateTotalAmount": "731.49",
                 "@EstimatedTotalAmount": "731.49",
-                "@CurrencyCode": "CAD",
-              },
-            },
-          ],
-        },
-      ],
-    },
-  },
-];
+                "@CurrencyCode": "CAD"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  }
+]

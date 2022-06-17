@@ -1,6 +1,7 @@
 import { Navbar } from "./components";
 import { FooterContainer } from "./containers";
-import { Homepage, SearchingForDealsPage, CarsSearchPage, CarDetailPage } from "./pages";
+
+import { Homepage, SearchingForDealsPage, CarDealsList, CarDetailsPage } from "./pages";
 
 import { Routes, Route } from 'react-router-dom'
 
@@ -15,9 +16,9 @@ export default function App() {
         </Route>
         <Route path='/search-for-deals' element={<SearchingForDealsPage />}>
         </Route>
-        <Route path='/car-deals' element={<CarsSearchPage />}>
+        <Route path='/car-deals' element={<CarDealsList />}>
         </Route>
-        <Route path='car-detail/:carId' element={<CarDetailPage />}>
+        <Route path='car-details/:carId' element={<CarDetailsPage />}>
         </Route>
       </Routes>
       <FooterContainer />

@@ -2,7 +2,7 @@ import { FilterPanel, CarsList, PickupReturnLegend } from "../../components"
 
 import './styles/car-search.scss'
 
-export default function CarSearchPage() {
+export default function CarDealsList() {
     return (
         <PickupReturnLegend>
             <div className="car-search-page">
