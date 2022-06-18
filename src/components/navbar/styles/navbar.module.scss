@@ -40,12 +40,13 @@
         border-radius: 30%;
       }
     }
-    a {
+    li:last-child {
       text-decoration: none;
       color: #0f0028;
       font-size: 2rem;
       font-weight: bold;
       transition: 0.5s;
+      cursor: pointer;
       &:hover {
         color: #00d2a8;
       }

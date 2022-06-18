@@ -1,0 +1,32 @@
+.car-details {
+  display: flex;
+  margin: 5rem 0;
+
+  &__car-image {
+    img {
+      width: 20rem;
+      margin-right: 6rem;
+    }
+  }
+  &__options {
+    display: flex;
+    flex-direction: column;
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    ul {
+      display: grid;
+      grid-template-columns: 50% 50%;
+      grid-column-gap: 2rem;
+      list-style: none;
+      white-space: nowrap;
+      li {
+        font-size: 1.2rem;
+        margin: 0.6rem 0;
+      }
+    }
+  }
+}

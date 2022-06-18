@@ -1,0 +1,23 @@
+.deal-price-breakdown {
+  border: 1px solid #e6e6e6;
+  border-radius: 5px;
+  padding: 2rem;
+  width: 30rem;
+  margin-bottom: 2rem;
+
+  h1 {
+    margin-bottom: 1rem;
+  }
+
+  &__rental-price {
+    display: flex;
+    justify-content: space-between;
+    p {
+      font-size: 1.2rem;
+      margin: 1.4rem 0;
+      &:nth-of-type(2) {
+        font-weight: bold;
+      }
+    }
+  }
+}

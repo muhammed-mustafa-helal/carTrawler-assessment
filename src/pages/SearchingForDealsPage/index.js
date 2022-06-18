@@ -9,7 +9,7 @@ export default function SearchingForDealsPage() {
     useEffect(() => {
         const timer = setTimeout(() => {
             navigate('/cars-deals')
-        }, 2000);
+        }, 2500);
         return () => clearTimeout(timer);
     }, [navigate]);
 

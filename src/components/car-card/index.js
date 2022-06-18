@@ -78,7 +78,7 @@ export default function CarCard({ car }) {
                     <img src={vendorLogo} alt='car.vendorName' />
                     <div className={classes['car-card__price--price']}>
                         <p>Price for 14 days</p>
-                        <h3>&#36;{Math.round(car.estimatedTotalAmount)} {car.currencyCode}</h3>
+                        <h3>&#36;{car.estimatedTotalAmount} {car.currencyCode}</h3>
                     </div>
                     <p className={classes['car-card__price--free-cancellation']}>
                         <span>
