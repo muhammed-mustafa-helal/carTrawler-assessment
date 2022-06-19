@@ -18,7 +18,7 @@
       }
     }
   }
-  &__car-specs {
+  &__car-filters {
     display: flex;
     flex-direction: column;
     margin: 1rem 2rem 2rem;
@@ -27,27 +27,13 @@
       font-weight: bold;
       margin-bottom: 1rem;
     }
-
-    &--input {
-      display: flex;
-      align-items: center;
-      margin-bottom: 1rem;
-
-      & label {
-        font-size: 1.4rem;
-        margin-left: 1rem;
-
-        white-space: nowrap;
-      }
-    }
   }
-}
-
-hr {
-  background-color: #e7e7e7;
-  height: 1px;
-  border: none;
-  @media screen and (max-width: 768px) {
-    display: none;
+  hr {
+    background-color: #e7e7e7;
+    height: 1px;
+    border: none;
+    @media screen and (max-width: 768px) {
+      display: none;
+    }
   }
 }

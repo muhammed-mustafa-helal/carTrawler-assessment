@@ -1,4 +1,5 @@
 import classes from './styles/filter-panel.module.scss'
+import { Checkbox } from '../'
 
 export default function FilterPanel() {
   return (
@@ -7,87 +8,76 @@ export default function FilterPanel() {
         <h2>Apply Sorting & Filters</h2>
         <hr />
       </div>
-      <div className={classes['filter-panel__car-specs']}>
+      <div className={classes['filter-panel__car-filters']}>
         <h2>Sort deals</h2>
-        <div className={classes['filter-panel__car-specs--input']}>
-          <input
-            id='car spec'
-            type="checkbox"
-          />
-          <label htmlFor='car spec'>Low to high</label>
-        </div>
-
-        <div className={classes['filter-panel__car-specs--input']}>
-          <input
-            id='car spec'
-            type="checkbox"
-          />
-          <label htmlFor='car spec'>Recommended</label>
-        </div>
+        <Checkbox
+          id={'low-to-high'}
+          title='Low to high'
+          name='low-to-high'
+        />
+        <Checkbox
+          id={'high-to-low'}
+          title='High to low'
+          name='high-to-low'
+        />
+        <Checkbox
+          id={'recommended'}
+          title='Recommended'
+          name='recommended'
+        />
         <hr />
       </div>
-      <div className={classes['filter-panel__car-specs']}>
+      <div className={classes['filter-panel__car-filters']}>
         <h2>Car Specs</h2>
-        <div className={classes['filter-panel__car-specs--input']}>
-          <input
-            id='car spec'
-            type="checkbox"
-          />
-          <label htmlFor='car spec'>Air conditioning</label>
-        </div>
 
-        <div className={classes['filter-panel__car-specs--input']}>
-          <input
-            id='car spec'
-            type="checkbox"
-          />
-          <label htmlFor='car spec'>4+ doors</label>
-        </div>
+        <Checkbox
+          id={'air-conditioning'}
+          title='Air conditioning'
+          name='air-conditioning'
+        />
+        <Checkbox
+          id={'four-more-doors'}
+          title='4+ Doors'
+          name='four-more-doors'
+        />
+        <Checkbox
+          id={'three-more-bags'}
+          title='3+ Bags'
+          name='three-more-bags'
+        />
         <hr />
       </div>
-      <div className={classes['filter-panel__car-specs']}>
+      <div className={classes['filter-panel__car-filters']}>
         <h2>Transmission</h2>
-        <div className={classes['filter-panel__car-specs--input']}>
-          <input
-            id='car spec'
-            type="checkbox"
-          />
-          <label htmlFor='car spec'>Automatic</label>
-        </div>
-
-        <div className={classes['filter-panel__car-specs--input']}>
-          <input
-            id='car spec'
-            type="checkbox"
-          />
-          <label htmlFor='car spec'>Manual</label>
-        </div>
+        <Checkbox
+          id={'automatic'}
+          title='Automatic'
+          name='automatic'
+        />
+        <Checkbox
+          id={'manual'}
+          title='Manual'
+          name='manual'
+        />
         <hr />
       </div>
-      <div className={classes['filter-panel__car-specs']}>
-        <h2>Suppliers</h2>
-        <div className={classes['filter-panel__car-specs--input']}>
-          <input
-            id='car spec'
-            type="checkbox"
-          />
-          <label htmlFor='car spec'>Alamo</label>
-        </div>
-
-        <div className={classes['filter-panel__car-specs--input']}>
-          <input
-            id='car spec'
-            type="checkbox"
-          />
-          <label htmlFor='car spec'>Avis</label>
-        </div>
-        <div className={classes['filter-panel__car-specs--input']}>
-          <input
-            id='car spec'
-            type="checkbox"
-          />
-          <label htmlFor='car spec'>Hertz</label>
-        </div>
+      <div className={classes['filter-panel__car-filters']}>
+        <h2>Vendors</h2>
+        <Checkbox
+          id={'alamo'}
+          title='Alamo'
+          name='alamo'
+        />
+        <Checkbox
+          id={'alvis'}
+          title='Alvis'
+          name='alvis'
+        />
+        <Checkbox
+          id={'hertz'}
+          title='Hertz'
+          name='hertz'
+        />
       </div>
     </div>
   )

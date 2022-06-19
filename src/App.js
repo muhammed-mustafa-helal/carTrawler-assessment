@@ -7,10 +7,13 @@ import { Homepage, SearchingForDealsPage, CarDealsList, CarDetailsPage } from ".
 
 import { HOME, SEARCH_DEALS, CAR_DEALS, CAR_DETAILS } from './constants/routes'
 
+import { ServiceContextProvider } from './context/service-context';
 
 export default function App() {
+
+
   return (
-    <>
+    <ServiceContextProvider>
       <Navbar />
       <Routes>
         <Route path={HOME} element={<Homepage />}>
@@ -23,7 +26,7 @@ export default function App() {
         </Route>
       </Routes>
       <FooterContainer />
-    </>
+    </ServiceContextProvider>
   );
 }
 
