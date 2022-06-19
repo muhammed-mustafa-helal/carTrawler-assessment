@@ -2,13 +2,16 @@
   display: flex;
   border: 1px solid #e7e7e7;
   border-radius: 10px;
+
   &__image {
     display: flex;
     align-items: center;
     justify-content: center;
+
     & img {
       width: 20rem;
       margin: 4rem;
+
       @media screen and (max-width: 600px) {
         width: 15rem;
         margin: 2rem;
@@ -17,7 +20,6 @@
   }
 }
 
-//options
 .car-card__options {
   display: flex;
   flex-direction: column;
@@ -26,6 +28,7 @@
     font-weight: bold;
     margin-top: 2rem;
     font-size: 2rem;
+
     @media screen and (max-width: 600px) {
       margin-top: 1.5rem;
       font-size: 1.4rem;
@@ -59,10 +62,12 @@
   margin-right: 2rem;
   align-items: flex-end;
   white-space: nowrap;
+
   img {
     width: 8rem;
     margin: 2rem 0 2rem;
   }
+
   &--price {
     display: flex;
     flex-direction: column;
@@ -83,7 +88,7 @@
     color: #0f0028; /* theme primary */
     border: none;
     border-radius: 2px;
-    padding: .6rem 3rem;
+    padding: 0.6rem 3rem;
     font-size: 1.2rem;
     font-weight: bold;
     cursor: pointer;

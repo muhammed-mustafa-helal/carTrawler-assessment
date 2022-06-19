@@ -10,15 +10,14 @@ import classes from './styles/car-details-page.module.scss';
 
 export default function CarDetailsPage() {
   const [carDeal, setCarDeal] = useState(null);
-  const { pickupReturnInfo, getCarById } = useContext(ServiceContext);
+  const { pickupReturnInfo, getCarDealById } = useContext(ServiceContext);
   const params = useParams();
 
 
   useEffect(() => {
-    const carDealById = getCarById(params.carId);
-    console.log(carDealById)
+    const carDealById = getCarDealById(params.carId);
     setCarDeal(carDealById)
-  }, [getCarById, params.carId])
+  }, [getCarDealById, params.carId])
 
 
   return (carDeal && (

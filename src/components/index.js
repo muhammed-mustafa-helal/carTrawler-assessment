@@ -17,5 +17,6 @@ export { default as DealPriceBreakdown } from './deal-price-breakdown';
 //shared
 export { default as LoadingSpinner } from './shared/loading-spinner';
 export { default as Checkbox } from './shared/checkbox';
+export {default as Radio} from './shared/radio';
 //HOC
 export { default as PickupReturnLegend } from './shared/HOC/pickup-return-legend';

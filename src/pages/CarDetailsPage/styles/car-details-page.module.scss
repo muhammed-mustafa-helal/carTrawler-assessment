@@ -1,6 +1,7 @@
 .car-details-page {
   overflow: hidden;
   margin: 1rem 2rem;
+
   &__container {
     display: flex;
     justify-content: center;
@@ -9,12 +10,14 @@
     margin: 0 auto;
     width: 100rem;
     column-gap: 4rem;
+
     @media screen and (max-width: 768px) {
       flex-direction: column;
       align-items: center;
       width: auto;
     }
   }
+
   &__information {
     display: flex;
     flex-direction: column;

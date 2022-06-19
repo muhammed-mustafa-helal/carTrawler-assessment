@@ -65,13 +65,13 @@ const ServiceContextProvider = ({ children }) => {
         setPickupReturnInfo({ pickupDate, returnDate, pickupLocation, returnLocation });
     }, [carTrawlerDataResponse]);
 
-    const getCarById = useCallback(carId => {
+    const getCarDealById = useCallback(carId => {
         return cars?.find(car => car.carId === carId);;
     }, [cars]);
 
 
     return (
-        <ServiceContext.Provider value={{ cars, vendorNames, pickupReturnInfo, getCarById }}>
+        <ServiceContext.Provider value={{ cars, vendorNames, pickupReturnInfo, getCarDealById }}>
             {children}
         </ServiceContext.Provider>
     );

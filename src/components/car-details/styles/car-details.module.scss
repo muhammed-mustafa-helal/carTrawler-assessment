@@ -8,6 +8,7 @@
       margin-right: 5rem;
     }
   }
+
   &__options {
     display: flex;
     flex-direction: column;
@@ -23,12 +24,14 @@
       grid-column-gap: 2rem;
       list-style: none;
       white-space: nowrap;
+
       li {
         font-size: 1.2rem;
         margin: 0.6rem 0;
       }
     }
   }
+
   &__vendor-logo {
     width: 10rem;
     display: flex;

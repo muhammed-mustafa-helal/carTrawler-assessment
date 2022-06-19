@@ -1,7 +1,17 @@
-import classes from './styles/filter-panel.module.scss'
-import { Checkbox } from '../'
+import { useState } from 'react';
 
-export default function FilterPanel() {
+import classes from './styles/filter-panel.module.scss'
+import { Checkbox, Radio } from '../'
+
+export default function FilterPanel({ sortingTechnique }) {
+  const [priceSortingTechnique, setPriceSortingTechnique] = useState('ascending')
+
+
+  const handlePriceSortingTechniqueChange = (e) => {
+    setPriceSortingTechnique(() => e.target.value);
+    sortingTechnique(e.target.value);
+  }
+
   return (
     <div className={classes['filter-panel']}>
       <div className={classes['filter-panel__header']}>
@@ -10,21 +20,24 @@ export default function FilterPanel() {
       </div>
       <div className={classes['filter-panel__car-filters']}>
         <h2>Sort deals</h2>
-        <Checkbox
-          id={'low-to-high'}
+
+        <Radio
+          id='ascending'
           title='Low to high'
-          name='low-to-high'
+          value='ascending'
+          name='sorting-technique'
+          handleChange={handlePriceSortingTechniqueChange}
+          checked={priceSortingTechnique === 'ascending'}
         />
-        <Checkbox
-          id={'high-to-low'}
+        <Radio
+          id='descending'
           title='High to low'
-          name='high-to-low'
+          value='descending'
+          name='sorting-technique'
+          handleChange={handlePriceSortingTechniqueChange}
+          checked={priceSortingTechnique === 'descending'}
         />
-        <Checkbox
-          id={'recommended'}
-          title='Recommended'
-          name='recommended'
-        />
+
         <hr />
       </div>
       <div className={classes['filter-panel__car-filters']}>

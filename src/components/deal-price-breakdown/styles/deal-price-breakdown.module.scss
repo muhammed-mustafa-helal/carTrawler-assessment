@@ -12,9 +12,11 @@
   &__rental-price {
     display: flex;
     justify-content: space-between;
+
     p {
       font-size: 1.2rem;
       margin: 1.4rem 0;
+
       &:nth-of-type(2) {
         font-weight: bold;
       }
