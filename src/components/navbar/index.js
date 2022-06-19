@@ -21,7 +21,7 @@ export default function Navbar() {
                         <img src="/images/united-states.svg" alt="English US" />
                     </li>
                     <li>
-                        <AiOutlineShoppingCart /><span>1</span>
+                        <AiOutlineShoppingCart />
                     </li>
                 </ul>
             </div>

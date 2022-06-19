@@ -9,33 +9,33 @@ import classes from './styles/car-details-page.module.scss';
 
 
 export default function CarDetailsPage() {
-  const [car, setCar] = useState(null);
-  const { cars, pickupReturnInfo } = useContext(ServiceContext);
+  const [carDeal, setCarDeal] = useState(null);
+  const { pickupReturnInfo, getCarById } = useContext(ServiceContext);
   const params = useParams();
-  const carId = params.carId;
 
 
   useEffect(() => {
-    const individualCar = cars.find(car => car.carId === carId);
-    setCar(individualCar)
-  }, [carId, cars])
+    const carDealById = getCarById(params.carId);
+    console.log(carDealById)
+    setCarDeal(carDealById)
+  }, [getCarById, params.carId])
 
 
-  return (car && (
+  return (carDeal && (
     <div className={classes['car-details-page']}>
       <div className={classes['car-details-page__container']}>
         <div className={classes['car-details-page__details']}>
           <h1>Your deal</h1>
           <p>Next...Checkout</p>
-          <CarDetails car={car} />
+          <CarDetails car={carDeal} />
           <DealPerks />
         </div>
         <div className={classes['car-details-page__information']}>
-          <DealPickupReturn pickupReturnInfo={pickupReturnInfo}/>
+          <DealPickupReturn pickupReturnInfo={pickupReturnInfo} />
           <DealPriceBreakdown
-            rateTotalAmount={car.rateTotalAmount}
-            estimatedTotalAmount={car.estimatedTotalAmount}
-            currencyCode={car.currencyCode}
+            rateTotalAmount={carDeal.rateTotalAmount}
+            estimatedTotalAmount={carDeal.estimatedTotalAmount}
+            currencyCode={carDeal.currencyCode}
           />
           <button>Go to checkout</button>
         </div>

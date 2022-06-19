@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 
 import { createContext, useState, useEffect, useCallback } from "react";
 
@@ -42,7 +43,6 @@ const ServiceContextProvider = ({ children }) => {
                     rateTotalAmount: TotalCharge['@RateTotalAmount'],
                     estimatedTotalAmount: TotalCharge['@EstimatedTotalAmount'],
                     currencyCode: TotalCharge['@CurrencyCode'],
-                    isAddedToCart: false
                 })
         })))
         carsArray.sort((a, b) => a.estimatedTotalAmount - b.estimatedTotalAmount);
@@ -63,12 +63,15 @@ const ServiceContextProvider = ({ children }) => {
         const pickupLocation = requestDetails.PickUpLocation['@Name'];
         const returnLocation = requestDetails.ReturnLocation['@Name'];
         setPickupReturnInfo({ pickupDate, returnDate, pickupLocation, returnLocation });
-    }, []);
+    }, [carTrawlerDataResponse]);
 
+    const getCarById = useCallback(carId => {
+        return cars?.find(car => car.carId === carId);;
+    }, [cars]);
 
 
     return (
-        <ServiceContext.Provider value={{ cars: cars, vendorNames: vendorNames, pickupReturnInfo: pickupReturnInfo }}>
+        <ServiceContext.Provider value={{ cars, vendorNames, pickupReturnInfo, getCarById }}>
             {children}
         </ServiceContext.Provider>
     );
