@@ -56,13 +56,19 @@ export default function CarDealsList() {
         carSpecs.threeBags ?
             newFilteringOptions.threeBags = carSpecs.threeBags :
             delete newFilteringOptions.threeBags;
-
+        console.log(newFilteringOptions);
         setFilteringOptions(newFilteringOptions);
     }
 
 
     const vendorsFilterHandler = (vendors) => {
-        setFilteringOptions({ ...filteringOptions, vendors });
+        let newFilteringOptions = { ...filteringOptions };
+        if (!vendors.length)
+            delete newFilteringOptions['vendors'];
+        else
+            newFilteringOptions['vendors'] = vendors;
+
+        setFilteringOptions(newFilteringOptions);
     }
 
     const filteringFunctions = {
