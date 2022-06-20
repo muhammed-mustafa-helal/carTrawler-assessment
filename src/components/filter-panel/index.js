@@ -4,9 +4,11 @@ import { Checkbox, Radio } from '../'
 
 import classes from './styles/filter-panel.module.scss'
 
+import { capitalizeFirstLetter } from '../../helpers'
+
 import { AIR_CONDITIONING_FILTER, FOUR_DOORS_FILTER, THREE_BAGS_FILTER } from "../../constants/filteringThresholds";
 
-export default function FilterPanel({ sortingType, transmissionFilter, carSpecsFilter, vendorsFilter }) {
+export default function FilterPanel({ sortingType, transmissionFilter, carSpecsFilter, vendorsFilter, vendorNames }) {
   const [priceSortingTechnique, setPriceSortingTechnique] = useState('ascending')
   const [transmissionType, setTransmissionType] = useState('')
   const [carSpecsOptions, setCarSpecsOptions] = useState({});
@@ -131,30 +133,17 @@ export default function FilterPanel({ sortingType, transmissionFilter, carSpecsF
       </div>
       <div className={classes['filter-panel__car-filters']}>
         <h2>Vendors</h2>
-        <Checkbox
-          id={'alamo'}
-          title='Alamo'
-          name='alamo'
-          value='ALAMO'
-          handleChange={handleVendorsFilterChange}
-          checked={vendors.includes('ALAMO')}
-        />
-        <Checkbox
-          id='avis'
-          title='Avis'
-          name='avis'
-          value='AVIS'
-          handleChange={handleVendorsFilterChange}
-          checked={vendors.includes('AVIS')}
-        />
-        <Checkbox
-          id={'hertz'}
-          title='Hertz'
-          name='hertz'
-          value='HERTZ'
-          handleChange={handleVendorsFilterChange}
-          checked={vendors.includes('HERTZ')}
-        />
+        {vendorNames.map((vendor) => (
+          <Checkbox
+            id={vendor}
+            key={vendor}
+            title={capitalizeFirstLetter(vendor)}
+            name={vendor}
+            handleChange={handleVendorsFilterChange}
+            value={vendor}
+            checked={vendors.includes(vendor)}
+          />
+        ))}
       </div>
     </div>
   )

@@ -9,7 +9,7 @@ import { IconContext } from 'react-icons'
 
 import classes from './styles/car-card.module.scss';
 
-import { trimToLowerCase } from '../../helpers/helpers'
+import { trimToLowerCase } from '../../helpers'
 import { vendorPhotos } from '../../fixtures/vendorsPhotos'
 import { CAR_DETAILS_DYNAMIC } from '../../constants/routes';
 

@@ -1,4 +1,4 @@
-import { randomIntFromInterval } from '../helpers/helpers'
+import { randomIntFromInterval } from '../helpers'
 import nextId from "react-id-generator";
 
 export const greatChoice = [

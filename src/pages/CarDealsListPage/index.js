@@ -9,7 +9,7 @@ import { ServiceContext } from "../../context/service-context";
 
 
 export default function CarDealsList() {
-    const { cars, pickupReturnInfo } = useContext(ServiceContext);
+    const { cars, pickupReturnInfo, vendorNames } = useContext(ServiceContext);
 
     const [sortedAndFilteredCars, setFilteredAndSortedCars] = useState([]);
 
@@ -115,6 +115,7 @@ export default function CarDealsList() {
                             transmissionFilter={transmissionFilterHandler}
                             carSpecsFilter={carSpecsFilterHandler}
                             vendorsFilter={vendorsFilterHandler}
+                            vendorNames={vendorNames}
                         />
                         <CarsList
                             cars={sortedAndFilteredCars}
