@@ -40,7 +40,7 @@ export default function CarDetails({ car }) {
                             <span>
                                 <TbExchange />
                             </span>
-                            {car.transmitionType}
+                            {car.transmissionType}
                         </li>
                         <li title='Fuel type'>
                             <span>

@@ -1,3 +1,5 @@
+@import '/sass/variables';
+
 .pickup-return {
   display: flex;
   flex-direction: column;
@@ -14,7 +16,7 @@
       display: flex;
       align-items: center;
       column-gap: 10rem;
-      border: 2px solid #00d2a8;
+      border: 2px solid $font-secondary;
       border-radius: 10px;
 
       p {

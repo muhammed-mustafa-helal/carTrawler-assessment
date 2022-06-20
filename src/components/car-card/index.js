@@ -47,7 +47,7 @@ export default function CarCard({ car }) {
                                     <TbExchange />
                                 </span>
 
-                                {car.transmitionType}
+                                {car.transmissionType}
                             </li>
                         </ul>
                         <ul className={classes['car-card__options--menu--catalog']}>

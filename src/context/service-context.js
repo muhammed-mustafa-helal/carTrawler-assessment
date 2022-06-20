@@ -26,6 +26,7 @@ const ServiceContextProvider = ({ children }) => {
 
     const getCars = useCallback(() => {
         const carsArray = [];
+
         vendorsAndAvailableCars.forEach(({ Vendor, VehAvails }) =>
         (VehAvails.forEach(({ Vehicle, TotalCharge }) => {
             carsArray.push(
@@ -33,7 +34,7 @@ const ServiceContextProvider = ({ children }) => {
                     carId: nextId('c-'),
                     name: Vehicle.VehMakeModel['@Name'],
                     airConditioning: Vehicle['@AirConditionInd'] === 'true' ? 'Yes' : 'No',
-                    transmitionType: Vehicle['@TransmissionType'],
+                    transmissionType: Vehicle['@TransmissionType'],
                     fuelType: Vehicle['@FuelType'],
                     doorCount: Vehicle['@DoorCount'],
                     passengerQuantity: Vehicle['@PassengerQuantity'],
@@ -44,9 +45,12 @@ const ServiceContextProvider = ({ children }) => {
                     estimatedTotalAmount: TotalCharge['@EstimatedTotalAmount'],
                     currencyCode: TotalCharge['@CurrencyCode'],
                 })
-        })))
+        })));
+
         carsArray.sort((a, b) => a.estimatedTotalAmount - b.estimatedTotalAmount);
+
         setCars(carsArray);
+
     }, [vendorsAndAvailableCars]);
 
     const getVendorNames = useCallback(() => {
@@ -56,17 +60,22 @@ const ServiceContextProvider = ({ children }) => {
 
     const getPickupReturnInfo = useCallback(() => {
         const requestDetails = carTrawlerDataResponse[0].VehAvailRSCore.VehRentalCore;
+
         const pickupDateTime = new Date(requestDetails['@PickUpDateTime']);
         const returnDateTime = new Date(requestDetails['@ReturnDateTime']);
+
         const pickupDate = format(pickupDateTime, 'MMM do yyyy, p')
         const returnDate = format(returnDateTime, 'MMM do yyyy, p');
+
         const pickupLocation = requestDetails.PickUpLocation['@Name'];
         const returnLocation = requestDetails.ReturnLocation['@Name'];
+
         setPickupReturnInfo({ pickupDate, returnDate, pickupLocation, returnLocation });
     }, [carTrawlerDataResponse]);
 
+
     const getCarDealById = useCallback(carId => {
-        return cars?.find(car => car.carId === carId);;
+        return cars?.find(car => car.carId === carId);
     }, [cars]);
 
 

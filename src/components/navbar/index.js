@@ -17,7 +17,7 @@ export default function Navbar() {
                     <li className={classes['navbar__menu--currency']} title='canadian dollar'>
                         CAD
                     </li>
-                    <li className={classes['navbar__menu--language']} title='website'>
+                    <li className={classes['navbar__menu--language']} title='website language'>
                         <img src="/images/united-states.svg" alt="English US" />
                     </li>
                     <li>

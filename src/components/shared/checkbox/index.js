@@ -1,7 +1,7 @@
 import classes from './styles/checkbox.module.scss';
 
 
-export default function Checkbox({ id, title, name, handleChange, checked }) {
+export default function Checkbox({ id, title, name, value, handleChange, checked }) {
     return (
         <div className={classes['checkbox-input']}>
             <input
@@ -10,6 +10,7 @@ export default function Checkbox({ id, title, name, handleChange, checked }) {
                 name={name}
                 onChange={handleChange}
                 checked={checked}
+                value={value}
             />
             <label htmlFor={id}>{title}</label>
         </div>

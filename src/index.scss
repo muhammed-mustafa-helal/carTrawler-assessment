@@ -1,10 +1,5 @@
 //variables
-$bg-white: #f8f8f8;
-$bg-gray: #e8e8e8;
-$theme-primary: #0f0028;
-$theme-secondary: #00d2a8;
-$font-primary: #0f0028;
-$border-primary: #e7e7e7;
+@import "/sass/variables.scss";
 
 //global styles
 *,
@@ -18,7 +13,7 @@ $border-primary: #e7e7e7;
 html {
   box-sizing: border-box;
   font-size: 62.5%;
-  color: #0f0028;
+  color: $font-primary;
   @media only screen and (max-width: 75em) {
     font-size: 50%;
   }

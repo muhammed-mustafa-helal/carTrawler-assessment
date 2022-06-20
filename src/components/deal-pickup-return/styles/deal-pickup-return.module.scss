@@ -1,5 +1,8 @@
+@import "/sass/variables";
+
+
 .deal-pickup-return {
-  border: 1px solid #e7e7e7;
+  border: 1px solid $border-primary;
   border-radius: 5px;
   padding: 2rem;
   width: 30rem;

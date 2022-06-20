@@ -1,6 +1,8 @@
+@import '/sass//variables';
+
 .hero {
-  background-color: #0f0028;
-  color: #fff;
+  background-color: $theme-primary;
+  color: $font-white;
   &__container {
     display: flex;
     flex-direction: column;
@@ -68,7 +70,7 @@
 
       input {
         height: 3rem;
-        border: 3px solid #00d2a8;
+        border: 3px solid $font-secondary;
         border-radius: 0.5rem;
         background-color: #e8e8e8;
         font-family: "Roboto", sans-serif;
@@ -84,9 +86,9 @@
       flex-wrap: wrap;
     }
     a {
-      background-color: #00d2a8; /* theme secondary */
+      background-color: $theme-secondary;
       text-decoration: none;
-      color: #0f0028; /* theme primary */
+      color: $font-primary;
       border: none;
       border-radius: 2px;
       padding: 0.7rem 3rem;
@@ -97,9 +99,9 @@
       margin-left: 1rem;
 
       &:hover {
-        background-color: #0f0028; /* theme primary */
-        color: #00d2a8; /* theme secondary */
-        outline: 1px solid #00d2a8; /* theme secondary */
+        background-color: $theme-primary;
+        color: $font-secondary;
+        outline: 1px solid $font-secondary;
       }
 
       @media screen and (max-width: 768px) {

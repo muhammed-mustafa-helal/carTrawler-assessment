@@ -1,3 +1,5 @@
+@import "/sass/variables";
+
 .navbar {
   height: 8rem;
 
@@ -43,13 +45,13 @@
     }
     li:last-child {
       text-decoration: none;
-      color: #0f0028;
+      color: $font-primary;
       font-size: 2rem;
       font-weight: bold;
       transition: 0.5s;
       cursor: pointer;
       &:hover {
-        color: #00d2a8;
+        color: $font-secondary;
       }
     }
     span {
@@ -57,7 +59,7 @@
       position: relative;
       bottom: 13px;
       right: 3px;
-      color: #00d2a8;
+      color: $font-secondary;
       padding: 0.3rem;
       border-radius: 50%;
     }

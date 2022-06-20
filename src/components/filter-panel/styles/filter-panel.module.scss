@@ -1,7 +1,9 @@
+@import "/sass//variables";
+
 .filter-panel {
   width: 20rem;
   height: fit-content;
-  border: 1px solid #e7e7e7;
+  border: 1px solid $border-primary;
   border-radius: 5px;
 
   @media screen and (max-width: 768px) {
@@ -31,7 +33,7 @@
     }
   }
   hr {
-    background-color: #e7e7e7;
+    background-color: $border-primary;
     height: 1px;
     border: none;
     @media screen and (max-width: 768px) {
