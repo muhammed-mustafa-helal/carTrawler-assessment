@@ -2,7 +2,7 @@ import { useState, useContext, useEffect } from "react";
 
 import { motion } from 'framer-motion'
 
-import { FilterPanel, CarsList, PickupReturnLegend } from "../../components"
+import { FilterPanel, CarsList, PickupReturnLegend, LoadingSpinner } from "../../components"
 
 import classes from './styles/car-search.module.scss'
 
@@ -14,17 +14,21 @@ export default function CarDealsList() {
     const { cars, pickupReturnInfo, vendorNames } = useContext(ServiceContext);
 
     const [sortedAndFilteredCars, setFilteredAndSortedCars] = useState([]);
-
     const [filteringOptions, setFilteringOptions] = useState({})
     const [sortingType, setSortingType] = useState('ascending');
+    const [isLoading, setIsLoading] = useState(false);
 
     useEffect(() => {
+        setIsLoading(true);
         cars?.length && setFilteredAndSortedCars([...cars]);
+        setIsLoading(false);
     }, [cars]);
 
 
     useEffect(() => {
+        setIsLoading(true);
         filterAndSortCars();
+        setIsLoading(false);
         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [filteringOptions, sortingType]);
 
@@ -106,31 +110,28 @@ export default function CarDealsList() {
 
 
     return (
-        (sortedAndFilteredCars?.length
-            &&
-            (<motion.div
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                exit={{ opacity: 0 }}
-            >
-                <PickupReturnLegend pickupReturnInfo={pickupReturnInfo}>
-                    <div className={classes['car-search-page']}>
-                        <div className={classes['car-search-page__container']}>
-                            <FilterPanel
-                                sortingType={sortingTypeHandler}
-                                transmissionFilter={transmissionFilterHandler}
-                                carSpecsFilter={carSpecsFilterHandler}
-                                vendorsFilter={vendorsFilterHandler}
-                                vendorNames={vendorNames}
-                            />
-                            <CarsList
-                                cars={sortedAndFilteredCars}
-                            />
-                        </div>
+        <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+        >
+            <PickupReturnLegend pickupReturnInfo={pickupReturnInfo}>
+                <div className={classes['car-search-page']}>
+                    <div className={classes['car-search-page__container']}>
+                        <FilterPanel
+                            sortingType={sortingTypeHandler}
+                            transmissionFilter={transmissionFilterHandler}
+                            carSpecsFilter={carSpecsFilterHandler}
+                            vendorsFilter={vendorsFilterHandler}
+                            vendorNames={vendorNames}
+                        />
+                        {isLoading ? <LoadingSpinner /> : null}
+                        {sortedAndFilteredCars?.length && !isLoading && (<CarsList
+                            cars={sortedAndFilteredCars}
+                        />)}
                     </div>
-                </PickupReturnLegend >
-            </motion.div>
-            )
-        )
+                </div>
+            </PickupReturnLegend >
+        </motion.div>
     )
 }
