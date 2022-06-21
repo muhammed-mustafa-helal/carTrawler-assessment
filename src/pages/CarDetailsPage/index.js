@@ -1,6 +1,8 @@
 import { useContext, useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom'
 
+import { motion } from 'framer-motion'
+
 import { CarDetails, DealPerks, DealPickupReturn, DealPriceBreakdown } from '../../components';
 
 import { ServiceContext } from '../../context/service-context'
@@ -21,7 +23,12 @@ export default function CarDetailsPage() {
 
 
   return (carDeal && (
-    <div className={classes['car-details-page']}>
+    <motion.div
+      className={classes['car-details-page']}
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+    >
       <div className={classes['car-details-page__container']}>
         <div className={classes['car-details-page__details']}>
           <h1>Your deal</h1>
@@ -39,7 +46,7 @@ export default function CarDetailsPage() {
           <button>Go to checkout</button>
         </div>
       </div>
-    </div>
+    </motion.div>
   ));
 
 }

@@ -1,5 +1,7 @@
 import { useState, useContext, useEffect } from "react";
 
+import { motion } from 'framer-motion'
+
 import { FilterPanel, CarsList, PickupReturnLegend } from "../../components"
 
 import classes from './styles/car-search.module.scss'
@@ -56,7 +58,6 @@ export default function CarDealsList() {
         carSpecs.threeBags ?
             newFilteringOptions.threeBags = carSpecs.threeBags :
             delete newFilteringOptions.threeBags;
-        console.log(newFilteringOptions);
         setFilteringOptions(newFilteringOptions);
     }
 
@@ -107,21 +108,29 @@ export default function CarDealsList() {
     return (
         (sortedAndFilteredCars?.length
             &&
-            <PickupReturnLegend pickupReturnInfo={pickupReturnInfo}>
-                <div className={classes['car-search-page']}>
-                    <div className={classes['car-search-page__container']}>
-                        <FilterPanel
-                            sortingType={sortingTypeHandler}
-                            transmissionFilter={transmissionFilterHandler}
-                            carSpecsFilter={carSpecsFilterHandler}
-                            vendorsFilter={vendorsFilterHandler}
-                            vendorNames={vendorNames}
-                        />
-                        <CarsList
-                            cars={sortedAndFilteredCars}
-                        />
+            (<motion.div
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                exit={{ opacity: 0 }}
+            >
+                <PickupReturnLegend pickupReturnInfo={pickupReturnInfo}>
+                    <div className={classes['car-search-page']}>
+                        <div className={classes['car-search-page__container']}>
+                            <FilterPanel
+                                sortingType={sortingTypeHandler}
+                                transmissionFilter={transmissionFilterHandler}
+                                carSpecsFilter={carSpecsFilterHandler}
+                                vendorsFilter={vendorsFilterHandler}
+                                vendorNames={vendorNames}
+                            />
+                            <CarsList
+                                cars={sortedAndFilteredCars}
+                            />
+                        </div>
                     </div>
-                </div>
-            </PickupReturnLegend >)
+                </PickupReturnLegend >
+            </motion.div>
+            )
+        )
     )
 }
