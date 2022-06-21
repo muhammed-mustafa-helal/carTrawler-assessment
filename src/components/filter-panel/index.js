@@ -4,9 +4,10 @@ import { Checkbox, Radio } from '../'
 
 import classes from './styles/filter-panel.module.scss'
 
+import { sortingFiltersFix, transmissionFiltersFix, carSpecsFiltersFix } from '../../fixtures/filters';
+
 import { capitalizeFirstLetter } from '../../helpers'
 
-import { AIR_CONDITIONING_FILTER, FOUR_DOORS_FILTER, THREE_BAGS_FILTER } from "../../constants/filteringThresholds";
 
 export default function FilterPanel({ sortingType, transmissionFilter, carSpecsFilter, vendorsFilter, vendorNames }) {
   const [priceSortingTechnique, setPriceSortingTechnique] = useState('ascending')
@@ -62,73 +63,49 @@ export default function FilterPanel({ sortingType, transmissionFilter, carSpecsF
 
       <div className={classes['filter-panel__car-filters']}>
         <h2>Sort deals</h2>
-        <Radio
-          id='ascending'
-          title='Low to high'
-          value='ascending'
-          name='sorting-technique'
-          handleChange={handleSortingChange}
-          checked={priceSortingTechnique === 'ascending'}
-        />
-        <Radio
-          id='descending'
-          title='High to low'
-          value='descending'
-          name='sorting-technique'
-          handleChange={handleSortingChange}
-          checked={priceSortingTechnique === 'descending'}
-        />
+        {sortingFiltersFix.map(({ id, title, value, name }) => (
+          <Radio
+            key={id}
+            id={id}
+            title={title}
+            value={value}
+            name={name}
+            handleChange={handleSortingChange}
+            checked={priceSortingTechnique === value}
+          />
+        ))}
         <hr />
       </div>
 
       <div className={classes['filter-panel__car-filters']}>
         <h2>Transmission</h2>
-        <Checkbox
-          id='automatic'
-          title='Automatic'
-          name='Automatic'
-          value='Automatic'
-          handleChange={handleTransmissionFilterChange}
-          checked={transmissionType === 'Automatic'}
-        />
-        <Checkbox
-          id='manual'
-          title='Manual'
-          name='Manual'
-          value='Manual'
-          handleChange={handleTransmissionFilterChange}
-          checked={transmissionType === 'Manual'}
-        />
+        {transmissionFiltersFix.map(({ id, title, value, name }) => (
+          <Checkbox
+            key={id}
+            id={id}
+            title={title}
+            name={name}
+            value={value}
+            handleChange={handleTransmissionFilterChange}
+            checked={transmissionType === value}
+          />
+        ))}
         <hr />
       </div>
 
       <div className={classes['filter-panel__car-filters']}>
         <h2>Car Specs</h2>
-
-        <Checkbox
-          id='air-conditioning'
-          title='Air conditioning'
-          name='airConditioning'
-          handleChange={handleCarSpecsFilterChange}
-          value={AIR_CONDITIONING_FILTER}
-          checked={carSpecsOptions.airConditioning === AIR_CONDITIONING_FILTER}
-        />
-        <Checkbox
-          id='four-more-doors'
-          title='4+ Doors'
-          name='fourDoors'
-          handleChange={handleCarSpecsFilterChange}
-          value={FOUR_DOORS_FILTER}
-          checked={carSpecsOptions.fourDoors === FOUR_DOORS_FILTER}
-        />
-        <Checkbox
-          id='three-more-bags'
-          title='3+ Bags'
-          name='threeBags'
-          handleChange={handleCarSpecsFilterChange}
-          value={THREE_BAGS_FILTER}
-          checked={carSpecsOptions.threeBags === THREE_BAGS_FILTER}
-        />
+        {carSpecsFiltersFix.map(({ id, title, name, value }) => (
+          <Checkbox
+            key={id}
+            id={id}
+            title={title}
+            name={name}
+            value={value}
+            handleChange={handleCarSpecsFilterChange}
+            checked={carSpecsOptions[name] === value}
+          />
+        ))}
         <hr />
       </div>
       <div className={classes['filter-panel__car-filters']}>

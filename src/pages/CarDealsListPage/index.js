@@ -2,7 +2,7 @@ import { useState, useContext, useEffect } from "react";
 
 import { motion } from 'framer-motion'
 
-import { FilterPanel, CarsList, PickupReturnLegend, LoadingSpinner } from "../../components"
+import { FilterPanel, CarsList, PickupReturnLegend, LoadingSpinner, ClearFilters } from "../../components"
 
 import classes from './styles/car-search.module.scss'
 
@@ -104,7 +104,7 @@ export default function CarDealsList() {
     const filterAndSortCars = () => {
         let newCars = [...cars];
         const filteredCars = filterCars(newCars);
-        const sortedAndFilteredCars = filteredCars.length ? sortCars(filteredCars) : sortCars([...cars]);
+        const sortedAndFilteredCars = sortCars(filteredCars);
         setFilteredAndSortedCars(() => sortedAndFilteredCars);
     }
 
@@ -126,7 +126,8 @@ export default function CarDealsList() {
                             vendorNames={vendorNames}
                         />
                         {isLoading ? <LoadingSpinner /> : null}
-                        {sortedAndFilteredCars?.length && !isLoading && (<CarsList
+                        {(Object.keys(filteringOptions).length > 0) && (!sortedAndFilteredCars.length > 0) && <ClearFilters />}
+                        {(sortedAndFilteredCars?.length > 0) && !isLoading && (<CarsList
                             cars={sortedAndFilteredCars}
                         />)}
                     </div>
