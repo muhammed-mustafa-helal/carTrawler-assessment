@@ -7,12 +7,11 @@ import { MdOutlineAir, MdLocalGasStation } from 'react-icons/md'
 import { BsCheck } from 'react-icons/bs'
 import { IconContext } from 'react-icons'
 
-import classes from './styles/car-card.module.scss';
-
 import { trimToLowerCase } from '../../helpers'
 import { vendorPhotos } from '../../fixtures/vendorsPhotos'
 import { CAR_DETAILS_DYNAMIC } from '../../constants/routes';
 
+import classes from './styles/car-card.module.scss';
 
 export default function CarCard({ car }) {
 
@@ -20,14 +19,14 @@ export default function CarCard({ car }) {
     const vendorLogo = vendorPhotos[vendorName];
 
     return (
-        <div className={classes['car-card']}>
+        <div className={classes['car-card']} data-testid='car-card'>
             <div className={classes['car-card__image']}>
                 <img src={car.pictureUrl} alt={car.name} />
             </div>
 
             <IconContext.Provider value={{ className: 'react-icons' }}>
                 <div className={classes['car-card__options']}>
-                    <h3 className={classes['car-card__options--name']}>{car.name}</h3>
+                    <h3 className={classes['car-card__options--name']} data-testid='car-name'>{car.name}</h3>
                     <div className={classes['car-card__options--menu']}>
                         <ul className={classes['car-card__options--menu--catalog']}>
                             <li title='Number of passengers'>
@@ -74,7 +73,7 @@ export default function CarCard({ car }) {
                 </div>
 
                 <div className={classes['car-card__price']}>
-                    <img src={vendorLogo} alt='car.vendorName' />
+                    <img src={vendorLogo} alt={car.vendorName} />
                     <div className={classes['car-card__price--price']}>
                         <p>Price for 14 days</p>
                         <h3>&#36;{car.estimatedTotalAmount} {car.currencyCode}</h3>

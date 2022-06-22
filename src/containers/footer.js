@@ -6,7 +6,7 @@ export default function FooterContainer() {
         <Footer>
             <Footer.Container>
                 <Footer.Identity>
-                    <Footer.Logo src="images/ct-logo-light.svg" alt='carTrawler Logo' />
+                    <Footer.Logo src="images/ct-logo-light.svg" alt='carTrawler Logo' data-testid='carTrawler-footer-image' />
                     <Footer.Slogan>Driving successful Partnerships</Footer.Slogan>
                 </Footer.Identity>
                 <Footer.Row>

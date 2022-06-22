@@ -20,7 +20,8 @@
     "node-sass": "^7.0.1"
   },
   "collectCoverageFrom": [
-    "<rootDir>/src/components/**/*.js"
+    "<rootDir>/src/components/**/*.js",
+    "!<rootDir>/src/app.js"
   ],
   "coverageThreshold": {
     "global": {
