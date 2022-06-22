@@ -14,5 +14,5 @@ export const transmissionFiltersFix = [
 export const carSpecsFiltersFix = [
     { id: 'air-conditioning', title: 'Air conditioning', name: 'airConditioning', value: AIR_CONDITIONING_FILTER },
     { id: 'four-more-doors', title: '4+ Doors', name: 'fourDoors', value: FOUR_DOORS_FILTER },
-    { id: 'four-more-doors', title: '3+ Bags', name: 'threeBags', value: THREE_BAGS_FILTER }
+    { id: 'three-more-bags', title: '3+ Bags', name: 'threeBags', value: THREE_BAGS_FILTER }
 ]

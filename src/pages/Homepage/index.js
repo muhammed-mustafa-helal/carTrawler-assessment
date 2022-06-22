@@ -9,8 +9,8 @@ export default function Homepage() {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
         >
-            <SearchForm />
-            <Brands />
+            <SearchForm data-testid='search-form' />
+            <Brands data-testid='brands' />
         </ motion.div >
     )
 }
