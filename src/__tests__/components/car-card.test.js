@@ -27,7 +27,7 @@ const car = {
 
 
 describe('<CarCard />', () => {
-    test('renders CarCard with populated Props correctly', async () => {
+    test('renders CarCard with populated Props correctly', () => {
 
         render(
             <MemoryRouter>
@@ -43,7 +43,7 @@ describe('<CarCard />', () => {
         expect(screen.getByTitle('Air conditioning')).toHaveTextContent(`${car.airConditioning}`);
     });
 
-    test('renders vendor logo with the correct image', async () => {
+    test('renders vendor logo with the correct image', () => {
         const vendorName = trimToLowerCase(car.vendorName);
         const vendorLogo = vendorPhotos[vendorName];
         render(
@@ -54,7 +54,7 @@ describe('<CarCard />', () => {
         expect(screen.getByAltText(vendorName)).toHaveAttribute('src', vendorLogo);
     });
 
-    test('navigates to the car details page with the correct carId', async () => {
+    test('navigates to the car details page with the correct carId', () => {
         render(
             <MemoryRouter>
                 <CarCard car={car} />

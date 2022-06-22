@@ -1,6 +1,6 @@
 import { render } from '@testing-library/react';
 import { screen } from '@testing-library/dom';
-import { toHaveAttribute } from '@testing-library/jest-dom';
+import '@testing-library/jest-dom';
 
 import { FooterContainer } from '../../containers';
 
@@ -66,7 +66,7 @@ describe('<Footer />', () => {
 
 
     });
-    test('renders the <Footer /> with 9 links', () => {
+    test('renders the <Footer /> with all required links', () => {
         render(
             <FooterContainer />
         );
