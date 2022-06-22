@@ -73,7 +73,7 @@ export default function CarCard({ car }) {
                 </div>
 
                 <div className={classes['car-card__price']}>
-                    <img src={vendorLogo} alt={car.vendorName} />
+                    <img src={vendorLogo} alt={vendorName} />
                     <div className={classes['car-card__price--price']}>
                         <p>Price for 14 days</p>
                         <h3>&#36;{car.estimatedTotalAmount} {car.currencyCode}</h3>
