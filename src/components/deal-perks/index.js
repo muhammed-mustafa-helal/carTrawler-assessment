@@ -3,7 +3,7 @@ import { IconContext } from "react-icons";
 
 import classes from './styles/deal-perks.module.scss'
 
-import { greatChoice, greatPrice } from '../../fixtures/dealPerks';
+import { greatChoice, greatPrice } from '../../utils/fixtures/dealPerks';
 
 export default function DealPerks() {
     return (

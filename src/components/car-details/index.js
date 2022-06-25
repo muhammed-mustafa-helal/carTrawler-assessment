@@ -4,8 +4,8 @@ import { TbLuggage, TbExchange } from 'react-icons/tb';
 import { MdOutlineAir, MdLocalGasStation } from 'react-icons/md';
 import { IconContext } from 'react-icons';
 
-import { trimToLowerCase } from '../../helpers'
-import { vendorPhotos } from '../../fixtures/vendorsPhotos'
+import { trimToLowerCase } from '../../utils/helpers'
+import { vendorPhotos } from '../../utils/fixtures/vendorsPhotos'
 
 import classes from './styles/car-details.module.scss';
 

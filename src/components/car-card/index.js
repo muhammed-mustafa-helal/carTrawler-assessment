@@ -7,9 +7,9 @@ import { MdOutlineAir, MdLocalGasStation } from 'react-icons/md'
 import { BsCheck } from 'react-icons/bs'
 import { IconContext } from 'react-icons'
 
-import { trimToLowerCase } from '../../helpers'
-import { vendorPhotos } from '../../fixtures/vendorsPhotos'
-import { CAR_DETAILS_DYNAMIC } from '../../constants/routes';
+import { trimToLowerCase } from '../../utils/helpers'
+import { vendorPhotos } from '../../utils/fixtures/vendorsPhotos'
+import { CAR_DETAILS_DYNAMIC } from '../../utils/constants/routes';
 
 import classes from './styles/car-card.module.scss';
 

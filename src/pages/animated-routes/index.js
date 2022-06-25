@@ -3,7 +3,7 @@ import { Routes, Route, useLocation } from 'react-router-dom'
 import { Homepage, SearchingForDealsPage, CarDealsList, CarDetailsPage } from "..";
 
 
-import { HOME, SEARCH_DEALS, CAR_DEALS, CAR_DETAILS } from '../../constants/routes';
+import { HOME, SEARCH_DEALS, CAR_DEALS, CAR_DETAILS } from '../../utils/constants/routes';
 
 import { AnimatePresence } from 'framer-motion';
 

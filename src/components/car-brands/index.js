@@ -1,6 +1,6 @@
 import classes from './styles/car-brands.module.scss'
 
-import { rentalBrands, rentalPerks } from '../../fixtures/rentalBrands'
+import { rentalBrands, rentalPerks } from '../../utils/fixtures/rentalBrands'
 
 export default function CarBrands() {
     return (

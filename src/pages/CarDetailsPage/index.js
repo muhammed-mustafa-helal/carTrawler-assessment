@@ -5,7 +5,7 @@ import { motion } from 'framer-motion'
 
 import { CarDetails, DealPerks, DealPickupReturn, DealPriceBreakdown } from '../../components';
 
-import { ServiceContext } from '../../context/service-context'
+import { ServiceContext } from '../../services/context/service-context'
 
 import classes from './styles/car-details-page.module.scss';
 

@@ -4,7 +4,7 @@ import { FooterContainer } from "./containers";
 
 import { AnimatedRoutes } from "./pages";
 
-import { ServiceContextProvider } from './context/service-context';
+import { ServiceContextProvider } from './services/context/service-context';
 
 export default function App() {
 

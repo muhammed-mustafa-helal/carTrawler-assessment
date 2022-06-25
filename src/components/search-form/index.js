@@ -4,7 +4,7 @@ import { AiOutlineCheck } from 'react-icons/ai';
 
 import classes from './styles/search-form.module.scss';
 
-import { SEARCH_DEALS } from '../../constants/routes';
+import { SEARCH_DEALS } from '../../utils/constants/routes';
 
 export default function Hero() {
 

@@ -6,7 +6,7 @@ import { FilterPanel, CarsList, PickupReturnLegend, LoadingSpinner, ClearFilters
 
 import classes from './styles/car-search.module.scss'
 
-import { ServiceContext } from "../../context/service-context";
+import { ServiceContext } from "../../services/context/service-context";
 
 
 

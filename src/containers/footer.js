@@ -1,5 +1,5 @@
 import { Footer } from '../components';
-import { officeLocations, customerService, usefulLinks } from '../fixtures/footer'
+import { officeLocations, customerService, usefulLinks } from '../utils/fixtures/footer'
 
 export default function FooterContainer() {
     return (

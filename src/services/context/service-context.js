@@ -5,7 +5,7 @@ import { createContext, useState, useEffect, useCallback } from "react";
 import nextId from "react-id-generator";
 import { format } from 'date-fns'
 
-import jsonData from '../cars.json'
+import jsonData from '../../cars.json'
 
 const ServiceContext = createContext();
 

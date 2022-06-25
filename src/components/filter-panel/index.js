@@ -4,9 +4,9 @@ import { Checkbox, Radio } from '../'
 
 import classes from './styles/filter-panel.module.scss'
 
-import { sortingFiltersFix, transmissionFiltersFix, carSpecsFiltersFix } from '../../fixtures/filters';
+import { sortingFiltersFix, transmissionFiltersFix, carSpecsFiltersFix } from '../../utils/fixtures/filters';
 
-import { capitalizeFirstLetter } from '../../helpers'
+import { capitalizeFirstLetter } from '../../utils/helpers'
 
 
 export default function FilterPanel({ sortingType, transmissionFilter, carSpecsFilter, vendorsFilter, vendorNames }) {
