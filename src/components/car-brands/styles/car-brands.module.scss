@@ -4,6 +4,8 @@
   height: 40rem;
   margin-bottom: 10rem;
 
+
+
   &__container {
     display: flex;
     justify-content: space-around;
@@ -11,6 +13,10 @@
     flex-wrap: wrap;
     margin: 0 auto;
     max-width: 140rem;
+
+    @include only-mobile {
+      margin: auto 5rem;
+    }
   }
 
   &__rentals {

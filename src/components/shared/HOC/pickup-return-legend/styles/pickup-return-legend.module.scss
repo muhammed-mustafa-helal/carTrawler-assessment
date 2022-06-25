@@ -1,4 +1,5 @@
-@import '/src/sass//variables';
+@import "/src/sass//variables";
+@import "/src/sass/responsive";
 
 .pickup-return {
   display: flex;
@@ -18,6 +19,10 @@
       column-gap: 10rem;
       border: 2px solid $font-secondary;
       border-radius: 10px;
+
+      @include only-mobile {
+        column-gap: 5rem;
+      }
 
       p {
         white-space: nowrap;

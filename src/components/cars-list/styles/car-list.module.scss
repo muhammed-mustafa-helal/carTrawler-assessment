@@ -1,6 +1,12 @@
+@import "/src/sass/responsive";
+
 .car-list {
   display: flex;
   flex-direction: column;
   row-gap: 2rem;
   margin-bottom: 4rem;
+
+  @include only-mobile {
+    margin: 0 2rem;
+  }
 }
