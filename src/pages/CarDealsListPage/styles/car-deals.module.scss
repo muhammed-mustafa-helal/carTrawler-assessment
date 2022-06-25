@@ -1,3 +1,5 @@
+@import "/src/sass/responsive";
+
 .car-search-page {
   display: flex;
 
@@ -9,7 +11,8 @@
     margin: 0 auto;
     width: 100rem;
     column-gap: 4rem;
-    @media screen and (max-width: 768px) {
+
+    @include only-mobile {
       flex-direction: column;
       align-items: center;
       width: auto;

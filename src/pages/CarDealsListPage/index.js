@@ -4,7 +4,7 @@ import { motion } from 'framer-motion'
 
 import { FilterPanel, CarsList, PickupReturnLegend, LoadingSpinner, ClearFilters } from "../../components"
 
-import classes from './styles/car-search.module.scss'
+import classes from './styles/car-deals.module.scss'
 
 import { ServiceContext } from "../../services/context/service-context";
 

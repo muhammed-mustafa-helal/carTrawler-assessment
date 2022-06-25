@@ -1,3 +1,5 @@
+@import "/src/sass/responsive";
+
 .car-brands {
   height: 40rem;
   margin-bottom: 10rem;
@@ -17,7 +19,7 @@
     & h2 {
       font-size: 2.4rem;
 
-      @media screen and (max-width: 768px) {
+      @include only-mobile {
         font-size: 1.8rem;
         margin-left: 1rem;
       }
@@ -45,11 +47,12 @@
     flex-wrap: wrap;
     justify-content: center;
 
-    @media screen and (max-width: 865px) {
+    @include tablet {
       padding-top: 7rem;
       margin-bottom: 3rem;
     }
-    @media screen and (max-width: 768px) {
+
+    @include only-mobile {
       padding-top: 3rem;
     }
 
@@ -65,7 +68,7 @@
           height: 6rem;
           margin-right: 1rem;
 
-          @media screen and (max-width: 768px) {
+          @include only-mobile {
             width: 4rem;
             height: 4rem;
           }
@@ -75,7 +78,7 @@
       &--content {
         h5 {
           font-size: 2rem;
-          @media screen and (max-width: 768px) {
+          @include only-mobile {
             font-size: 1.6rem;
           }
         }
@@ -83,7 +86,7 @@
         p {
           font-size: 1.6rem;
 
-          @media screen and (max-width: 768px) {
+          @include only-mobile {
             font-size: 1.2rem;
           }
         }

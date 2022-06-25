@@ -1,3 +1,5 @@
+@import "/src/sass/responsive";
+
 .search-deals {
   display: flex;
   flex-direction: column;
@@ -8,7 +10,7 @@
     font-size: 2.4rem;
     text-align: center;
 
-    @media screen and (max-width: 768px) {
+    @include only-mobile {
       font-size: 2rem;
     }
   }
@@ -21,7 +23,7 @@
     width: 70rem;
     margin: 3rem auto;
 
-    @media screen and (max-width: 768px) {
+    @include only-mobile {
       width: 50rem;
       column-gap: 3rem;
     }
@@ -32,7 +34,7 @@
       -webkit-box-shadow: 8px 5px 12px 3px rgba(0, 0, 0, 0.3);
       box-shadow: 8px 5px 12px 3px rgba(0, 0, 0, 0.3);
 
-      @media screen and (max-width: 768px) {
+      @include only-mobile {
         margin: 1rem;
       }
     }
